@@ -30,10 +30,15 @@ Git helps you know what you did, when, and why.
 Using GitHub to store your code is important for a few reasons:
 
 1. It gives you a remote repository, which will keep your code safe in case something happens to your local copy on your computer.
+
 2. GitHub makes it easy to collaborate with other developers. This is beneficial because:
+
     2a. Having extra sets of eyes looking at your code will help find ways you can improve it.
+
     2b. It provides remote access, meaning you can access your files from any computer.
+
     2c. Other developers can interact with your repositories, meaning you can collaborate without swapping physical items like a USB drive.
+
 3. It's free, as long as your repositories are public.
 
 
