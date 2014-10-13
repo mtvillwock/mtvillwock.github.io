@@ -31,8 +31,17 @@ I'm thrilled to be attending DBC. I've spend the majority of my life being told 
 
 Of course, DBC also makes me nervous. Why wouldn't it?
 
-I'm traveling halfway across the country to a city that I don't know to spend 9 months with people I've only recently met learning a skill that I have little experience with.
+I'm traveling
++ halfway across the country
++ to a city that I don't know
++ to spend 9 months with people I've only recently met
++ and learn a skill that I have little experience with
 
-But being nervous is a good thing. It means that I'm not doing something familiar. Something easy. Something I'm used to doing. It will challenge me. It will change me.
+In the words of James T. Kirk, "Sounds like fun."
+https://www.youtube.com/watch?v=fmdV3ypR3tA
+
+But being nervous is a good thing. It means that I'm not doing something familiar. I'm not doing something easy. I'm not doing something I'm used to doing.
+
+DBC will challenge me. DBC will change me.
 
 Who wouldn't want to be a part of that?
