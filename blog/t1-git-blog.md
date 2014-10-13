@@ -20,7 +20,7 @@ Another cool thing is that you can use version control for anything, not just co
 
 Git keeps a log of all the changes that you (and anyone else working on the files) commits. It provides a date/time entry, a message from the author explaining what changes were made, and who the author of the changes was. Git can also will tell you if you have any changes that are unstaged (modified but not committed), staged (modified, and ready to be committed), and committed (saved as a checkpoint of sorts that can be returned to if anything goes wrong).
 
-All it takes is some familiarity with using the command line, and suddenly your projects are well-protected from normally irrecoverable problems like accidental overwrites as well as more thoughtfully recorded due to the incorporation of messages that describe your commits. 
+All it takes is some familiarity with using the command line, and suddenly your projects are well-protected from normally irrecoverable problems like accidental overwrites as well as more thoughtfully recorded due to the incorporation of messages that describe your commits.
 
 Git helps you know what you did, when, and why.
 
@@ -28,6 +28,7 @@ Git helps you know what you did, when, and why.
 + Why use GitHub to store your code?
 
 Using GitHub to store your code is important for a few reasons:
+
 1. It gives you a remote repository, which will keep your code safe in case something happens to your local copy on your computer.
 2. GitHub makes it easy to collaborate with other developers. This is beneficial because:
     2a. Having extra sets of eyes looking at your code will help find ways you can improve it.
