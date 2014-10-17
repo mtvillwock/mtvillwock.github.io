@@ -64,16 +64,16 @@ h1{
 /*Left half of body (menu / about author)*/
 #left{
     float:left;
-    width:30%;
+    width:20%;
     white-space: normal;
-    margin-left: 20px;
+    margin-left: auto;
 }
 
 /*Right half of body (blog post)*/
 #right{
     float:right;
     width:70%;
-    margin: auto;
+    margin-right: auto;
     position: relative;
 }
 
@@ -103,7 +103,7 @@ h2{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     clear: both;
-    padding: 10px;
+    padding: 0;
     position: relative;
     bottom: -20px;
     text-align: center;
