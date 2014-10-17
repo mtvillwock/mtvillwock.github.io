@@ -12,7 +12,6 @@ p {
     background-color:#00CCFF;
     border-radius: 15px;
     /*curves all corners of div*/
-    margin: 20px;
     width: 100%;
 }
 
@@ -103,7 +102,7 @@ h2{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     clear: both;
-    padding: 0;
+    padding-bottom: 15px;
     position: relative;
     bottom: -20px;
     text-align: center;
