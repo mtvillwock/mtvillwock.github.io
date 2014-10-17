@@ -5,15 +5,18 @@ body{
 
 #header{
     background-color:#00CCFF;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    padding-bottom: 10px;
+    border-radius: 15px;
+    /*curves all corners of div*/
+    margin: 20px;
+    width: 100%;
 }
 
 h1{
     font-family: Georgia, sans-serif;
-    font-size: 32px;
+    font-size: 40px;
     text-align:center;
+    color: navy;
+    margin-top: 20px;
 }
 
 #header li{
@@ -24,7 +27,6 @@ h1{
 
 #header li a{
     color:#FFFFFF;
-    font-weight:bold;
     text-decoration: none;
     padding: 5px;
     border: 3px solid #000000;
@@ -34,6 +36,7 @@ h1{
     display:inline;
     height: 30px;
     width: 30px;
+    margin-right: 10px;
 }
 
 #img1{
@@ -56,7 +59,8 @@ h1{
 /*Left half of body (menu / about author)*/
 #left{
     float:left;
-    width:25%;
+    width:20%;
+    white-space: pre-line;
 }
 
 #left ul{
@@ -90,11 +94,11 @@ background-color: #000080;
 /*Right half of body (blog post)*/
 #right{
     float:right;
-    width:75%;
+    width:62%;
 }
 
 h2{
-    font-family: Tahoma, Verdana, sans-serif;
+    font-family: Georgia, Helvetica, sans-serif;
     font-size: 24px;
     text-align:left;
     margin-top: 0.7em;
@@ -104,17 +108,13 @@ h2{
     text-align:right;
     margin-top: -45px;
     margin-right: 20px;
+    font-size: 16px;
 }
 
 #content {
     margin: 10px;
     border: 3px solid black;
-    white-space: pre-line;
-}
-
-#right input{
-    padding-bottom: 10px;
-    border:1px solid #778899;
+    white-space: pre-wrap;
 }
 
 #footer{
@@ -125,5 +125,6 @@ h2{
     padding: 10px;
     position: relative;
     bottom: -20px;
-    text-align: right;
+    text-align: center;
+    width: 100%;
 }
