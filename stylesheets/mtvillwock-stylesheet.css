@@ -1,0 +1,65 @@
+/*mtvillwock.github.io stylesheet*/
+html {
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Georgia, Helvetica, sans-serif
+}
+
+h2 {
+  font-family: Helvetica, monospace
+}
+
+h3 {
+  font-family: Arial, sans-serif
+}
+
+div {
+
+}
+
+p {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+img {
+
+}
+
+a {
+
+}
+
+#header {
+  background-color: #e8e189
+  border-radius: 20px;
+  color: #1410ff;
+  height: 100px;
+  position: fixed;
+  width: 85%
+}
+
+/*PAGE SPECIFIC CONTENT*/
+
+#footer {
+  background-color: #e8e189
+  clear: both;
+  color: #1410ff;
+  height: 100px;
+  position: absolute;
+  width: 100%
+}
