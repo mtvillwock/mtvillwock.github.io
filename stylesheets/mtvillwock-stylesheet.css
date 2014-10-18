@@ -10,14 +10,14 @@ body {
 }
 
 h1 {
-  font-family: Georgia, Helvetica, sans-serif
+  font-family: Tahoma, Helvetica, sans-serif
   font-size: 40px;
   text-align: center;
 
 }
 
 h2 {
-  font-family: Helvetica, monospace
+  font-family: monospace
   font-size: 30px;
   text-align: center;
 }
@@ -29,7 +29,6 @@ h3 {
 }
 
 div {
-background-color: #e8e189;
 margin: auto;
 padding-top: 10px;
 padding-bottom: 10px;
@@ -64,9 +63,12 @@ a:visited {
 
 #header {
   background-color: #e8e189
-  border-radius: 20px;
+  border-color: 3px solid #1410ff;
+  border-radius: 15px;
   color: #1410ff;
   height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   position: fixed;
   width: 85%
 }
@@ -83,14 +85,14 @@ a:visited {
 }
 
 #header img {
-  display: inline;
+  display: block;
   height: 30px;
   width: 30px;
   margin-right: 10px;
 }
 
 #twitter-top {
-  margin-left: 50%;
+  margin-left: 20px;
 }
 
 #facebook-top {
@@ -110,6 +112,11 @@ a:visited {
 }
 
 /*START index.html SPECIFIC CONTENT*/
+
+#content-block div {
+  background-color: #FFFFDB
+  margin-top: 10px;
+}
 
 /*END index.html SPECIFIC CONTENT*/
 
@@ -136,11 +143,15 @@ width: 50%;
 
 #footer {
   background-color: #e8e189
+  border-color: 5px solid #1410ff;
+  border-radius: 15px;
   clear: both;
   color: #1410ff;
   height: 50px;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   position: absolute;
+  text-align: center;
   width: 100%
 }
 
@@ -150,6 +161,7 @@ width: 50%;
 
 #footer li a {
   color: ##9FCA5F;
-  text-decoration: none;
   padding: 5px;
+
+  text-decoration: none;
 }
