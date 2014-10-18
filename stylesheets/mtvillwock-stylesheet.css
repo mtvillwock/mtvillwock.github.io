@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: #73e8e7;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h3 {
 }
 
 div {
-
+background-color: #ff7c1f;
 }
 
 p {
@@ -53,7 +54,25 @@ a {
   width: 85%
 }
 
-/*PAGE SPECIFIC CONTENT*/
+/*START index.html SPECIFIC CONTENT*/
+
+/*END index.html SPECIFIC CONTENT*/
+
+/*START blog.html SPECIFIC CONTENT*/
+
+/*END blog.html SPECIFIC CONTENT*/
+
+/*START profile.html SPECIFIC CONTENT*/
+
+/*END profile.html SPECIFIC CONTENT*/
+
+/*START work.html SPECIFIC CONTENT*/
+
+/*END work.html SPECIFIC CONTENT*/
+
+#CTA {
+
+}
 
 #footer {
   background-color: #e8e189
