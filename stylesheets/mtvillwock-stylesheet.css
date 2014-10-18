@@ -91,6 +91,10 @@ a:visited {
   margin-right: 10px;
 }
 
+#social icons {
+  float:right;
+}
+
 #twitter-top {
   margin-left: 20px;
 }
