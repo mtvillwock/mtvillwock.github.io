@@ -80,7 +80,7 @@ a:visited {
 li a {
   color: #7e51ff;
   margin-right: 5px;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
   text-decoration: none;
 }
 
@@ -130,6 +130,7 @@ border-radius: 20px;
 clear: both;
 color: #9FCA5F;
 height: 100px;
+padding: 10px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 10px;
