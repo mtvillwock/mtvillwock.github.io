@@ -1,11 +1,14 @@
 /*mtvillwock.github.io stylesheet*/
+/* Commented out
 html {
 
 }
+Because it isn't being used */
 
 body {
   margin: 0;
   padding: 0;
+  background-color: ##73e8e7
 }
 
 h1 {
@@ -55,7 +58,7 @@ a {
 Delete comment to reactivate */
 
 a:visited {
-  color:#F5C04E
+  color: #78FF64;
 }
 
 #header {
@@ -75,7 +78,7 @@ a:visited {
 }
 
 #header li a {
-  color: ##9FCA5F;
+  color: ##FF7C1F;
   text-decoration: none;
   padding: 5px;
 }
@@ -87,18 +90,19 @@ a:visited {
   margin-right: 10px;
   margin-top: 10px;
   width: 30px;
-
 }
 
 /*START index.html SPECIFIC CONTENT*/
 
 #content-block {
   background-color: #FFFFDB;
+  clear: both;
   margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
+  padding: 20px;
   position: relative;
-  width: 70%;
+  max-width: 70%;
   text-align: center;
 }
 
@@ -119,11 +123,11 @@ a:visited {
 #CTA {
 background-color:#F5C04E;
 border-radius: 20px;
+clear: both;
 color: #9FCA5F;
 height: 100px;
+max-width: 50%;
 text-align: center;
-width: 50%;
-
 }
 
 #footer {
@@ -137,7 +141,7 @@ width: 50%;
   margin-bottom: 20px;
   position: absolute;
   text-align: center;
-  width: 100%;
+  max-width: 85%;
 }
 
 #footer li {
