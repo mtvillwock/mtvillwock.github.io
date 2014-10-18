@@ -6,7 +6,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #73e8e7;
 }
 
 h1 {
@@ -32,7 +31,6 @@ div {
 margin: auto;
 padding-top: 10px;
 padding-bottom: 10px;
-width: 75%;
 white-space: normal;
 }
 
@@ -69,7 +67,7 @@ a:visited {
   height: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
-  position: fixed;
+  position: absolute;
   width: 85%
 }
 
@@ -91,8 +89,8 @@ a:visited {
   margin-right: 10px;
 }
 
-#social icons {
-  float:right;
+#social-icons {
+ float:right;
 }
 
 #twitter-top {
@@ -120,6 +118,7 @@ a:visited {
 #content-block div {
   background-color: #FFFFDB
   margin-top: 10px;
+  width: 70%;
 }
 
 /*END index.html SPECIFIC CONTENT*/
@@ -141,6 +140,7 @@ background-color:#F5C04E
 border-radius: 20px;
 color: #9FCA5F;
 height: 100px;
+text-align: center;
 width: 50%;
 
 }
