@@ -134,7 +134,8 @@ width: 50%;
   background-color: #e8e189
   clear: both;
   color: #1410ff;
-  height: 100px;
+  height: 50px;
+  margin-top: 15px;
   position: absolute;
   width: 100%
 }
