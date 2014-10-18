@@ -25,13 +25,15 @@ h2 {
 h3 {
   font-family: Arial, sans-serif
   font-size: 24px;
-  text-align: left;
+  text-align: center;
 }
 
 div {
 background-color: #e8e189;
 margin: auto;
-width: 80%;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 75%;
 white-space: normal;
 }
 
@@ -56,6 +58,10 @@ a {
 
 }
 
+a:visited {
+  color:#F5C04E
+}
+
 #header {
   background-color: #e8e189
   border-radius: 20px;
@@ -72,7 +78,7 @@ a {
 
 #header li a {
   color: ##9FCA5F;
-  text-decoration: underline;
+  text-decoration: none;
   padding: 5px;
 }
 
@@ -131,4 +137,10 @@ width: 50%;
   height: 100px;
   position: absolute;
   width: 100%
+}
+
+#footer li a {
+  color: ##9FCA5F;
+  text-decoration: none;
+  padding: 5px;
 }
