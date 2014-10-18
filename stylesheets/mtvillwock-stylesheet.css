@@ -28,15 +28,13 @@ h3 {
 }
 
 div {
-margin: auto;
 padding-top: 10px;
 padding-bottom: 10px;
-white-space: normal;
 }
 
 p {
 text-align: left;
-
+white-space: normal;
 }
 
 ul {
@@ -94,7 +92,11 @@ a:visited {
 #content-block div {
   background-color: #FFFFDB
   margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
   width: 70%;
+  text-align: center;
 }
 
 /*END index.html SPECIFIC CONTENT*/
