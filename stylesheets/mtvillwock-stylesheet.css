@@ -11,21 +11,32 @@ body {
 
 h1 {
   font-family: Georgia, Helvetica, sans-serif
+  font-size: 40px;
+  text-align: center;
+
 }
 
 h2 {
   font-family: Helvetica, monospace
+  font-size: 30px;
+  text-align: center;
 }
 
 h3 {
   font-family: Arial, sans-serif
+  font-size: 24px;
+  text-align: left;
 }
 
 div {
-background-color: #ff7c1f;
+background-color: #e8e189;
+margin: auto;
+width: 80%;
+white-space: normal;
 }
 
 p {
+text-align: left;
 
 }
 
@@ -54,6 +65,40 @@ a {
   width: 85%
 }
 
+#header li {
+  display: inline;
+  margin-top: -80px
+}
+
+#header li a {
+  color: ##9FCA5F;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+#header img {
+  display: inline;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+#twitter-top {
+  margin-left: 70%;
+}
+
+#facebook-top {
+  margin-left: 10px;
+}
+
+#linkedin-top {
+  margin-left: 10px;
+}
+
+#googleplus-top {
+  margin-left: 10px;
+}
+
 /*START index.html SPECIFIC CONTENT*/
 
 /*END index.html SPECIFIC CONTENT*/
@@ -71,6 +116,11 @@ a {
 /*END work.html SPECIFIC CONTENT*/
 
 #CTA {
+background-color:#F5C04E
+border-radius: 20px;
+color: #9FCA5F;
+height: 100px;
+width: 50%;
 
 }
 
