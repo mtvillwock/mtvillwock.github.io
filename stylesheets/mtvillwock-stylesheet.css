@@ -86,11 +86,11 @@ li a {
 
 #social-icons {
   display: block;
-  height: 30px;
+  height: 32px;
   float: right;
   margin-right: 10px;
   margin-top: 10px;
-  width: 30px;
+  width: 32px;
   z-index: 1;
 }
 
@@ -104,12 +104,15 @@ li a {
   margin-left: auto;
   padding: 10px;
   position: relative;
-  max-width: 70%;
+  max-width: 400px;
   text-align: center;
 }
 
 #content-block img {
   float: left;
+  height: 100px;
+  width: 100px;
+
 }
 
 /*END index.html SPECIFIC CONTENT*/
@@ -150,5 +153,5 @@ text-align: center;
   margin-right: auto;
   position: absolute;
   text-align: center;
-  max-width: 85%;
+  max-width: 400px;
 }
