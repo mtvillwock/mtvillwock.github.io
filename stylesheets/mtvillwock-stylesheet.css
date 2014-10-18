@@ -71,9 +71,8 @@ a:visited {
   width: 85%
 }
 
-#header li {
+#navbar {
   display: inline;
-  margin-top: -80px
 }
 
 #header li a {
@@ -82,35 +81,12 @@ a:visited {
   padding: 5px;
 }
 
-#header img {
+#social-icons {
   display: block;
   height: 30px;
   width: 30px;
   margin-right: 10px;
-}
-
-#social-icons {
- float:right;
-}
-
-#twitter-top {
-  margin-left: 20px;
-}
-
-#facebook-top {
-  margin-left: 10px;
-}
-
-#linkedin-top {
-  margin-left: 10px;
-}
-
-#googleplus-top {
-  margin-left: 10px;
-}
-
-#github-top {
-  margin-left: 10px;
+  margin-top: 10px;
 }
 
 /*START index.html SPECIFIC CONTENT*/
