@@ -90,7 +90,7 @@ a:visited {
 }
 
 #twitter-top {
-  margin-left: 70%;
+  margin-left: 50%;
 }
 
 #facebook-top {
@@ -137,6 +137,10 @@ width: 50%;
   height: 100px;
   position: absolute;
   width: 100%
+}
+
+#footer li {
+  display: inline;
 }
 
 #footer li a {
