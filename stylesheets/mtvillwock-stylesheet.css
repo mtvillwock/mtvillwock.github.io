@@ -8,7 +8,7 @@ Because it isn't being used */
 body {
   margin: 0;
   padding: 0;
-  background-color: #73e8e7;
+  background-color: #CAF4FF;
 }
 
 h1 {
@@ -50,20 +50,20 @@ li {
 img {
 
 }
-
-a {
-
-}
 Delete comment to reactivate */
 
+a {
+  color: #1200B2;
+}
+
 a:visited {
-  color: #78FF64;
+  color: #ffb54f;
 }
 
 #header {
-  background-color: #e8e189;
+  background-color: #B9FFB8;
   border-radius: 15px;
-  color: #1410ff;
+  color: #1200B2;
   height: 200px;
   margin-left: 7%;
   margin-right: auto;
@@ -77,7 +77,6 @@ a:visited {
 }
 
 li a {
-  color: #7e51ff;
   margin-right: 5px;
   padding: 5px 10px 5px 10px;
   text-decoration: none;
@@ -97,7 +96,7 @@ li a {
 /*START index.html SPECIFIC CONTENT*/
 
 #content-block {
-  background-color: #FFFFDB;
+  background-color: #FFFBDF;
   clear: both;
   margin-top: 5px;
   margin-right: auto;
@@ -124,10 +123,10 @@ li a {
 /* work.html SPECIFIC CONTENT*/
 
 #CTA {
-background-color:#F5C04E;
+background-color:#BCFFD4;
 border-radius: 20px;
 clear: both;
-color: #9FCA5F;
+/*color:#FFDDAA;*/
 height: 100px;
 padding: 10px;
 margin-left: auto;
@@ -144,10 +143,10 @@ text-align: center;
 }
 
 #footer {
-  background-color: #e8e189;
+  background-color: #B9FFB8;
   border-radius: 15px;
   clear: both;
-  color: #1410ff;
+  color: #1200B2;
   height: 50px;
   margin-top: 10px;
   margin-bottom: 20px;
