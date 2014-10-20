@@ -15,7 +15,7 @@ h1 {
   font-family: Georgia, Helvetica, sans-serif;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 20px;
 }
 
@@ -23,8 +23,8 @@ h2 {
   font-family: monospace;
   font-size: 30px;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h3 {
