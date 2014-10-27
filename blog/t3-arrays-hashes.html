@@ -50,16 +50,16 @@ Just Git'ing Started: Hashes and Arrays
            <h3>How do I know which to use?</h3>
            <h4>Hashes: Lists without Order</h4>
               <p>Hashes can be used for inventories, since different keys can have the same value. For example, in this hash,</p>
-              <p><code>store_inventory { <br>
+              <p><pre><code>store_inventory { <br>
               :eggs => 12,<br>
               :bread => 3,<br>
               :hamburgers => 4,<br>
               :pizza => 3,<br>
               }
-              </code></p>
+              </code></pre></p>
               <p>there are equal amounts of pizza and bread.</p>
               <p>Hashes are also useful for items that are logically paired together and lend themselves to the :key => "value" structure of a hash, but without the necessity of appearing in a linear numerical order. That could be the fields and answers of a form, or in the example below, players by position in a fantasy football roster.</p>
-              <p><code>my_roster {
+              <p><pre><code>my_roster {
               :qb1 => "Drew Brees",<br>
               :wr1 => "Demaryius Thomas",<br>
               :wr2 => "Roddy White",<br>
@@ -71,27 +71,27 @@ Just Git'ing Started: Hashes and Arrays
               :k => "Adam Vinatieri",<br>
               :def => "San Francisco 49ers",<br>
               }
-              </code>
+              </code></pre>
               </p>
            <h4>Arrays: Step-by-Step Lists</h4>
             <p>Array are best used for lists, especially lists that need to be kept in order. This is because arrays associate their entries with an index number (starting with zero). For example, if you were listing finishers in a race, you might make an array like this:</p>
-            <p><code>runner_places = ["Frank", "Sam", "Tom"]
-            </code></p>
+            <p><pre><code>runner_places = ["Frank", "Sam", "Tom"]
+            </code></pre></p>
             <p>However, that would result in this when you printed it out:</p>
             <p>
-            <code>
+            <pre><code>
             "Frank" => 0<br>
             "Sam" => 1<br>
             "Tom" => 2<br>
-            </code>
+            </code></pre>
             </p>
             <p>Not exactly what we wanted, right? We can make this work if we feed an extra value to the array when we create it. Something like this:</p>
-            <p><code>
+            <p><pre><code>
             "Name/Place" => 0<br>
             "Frank" => 1<br>
             "Sam" => 2<br>
             "Tom" => 3<br>
-            </code></p>
+            </code></pre></p>
             <p>Both hashes and arrays have their uses. You'll have to decide what is best to use for whatever your information storing needs.</p>
 
             <h3>What can I do with hashes and arrays after I make them?</h3>
