@@ -64,11 +64,7 @@ Just Git'ing Started: Enumerable Methods
             <p>The #map method has a few cool features. First, whatever information you feed to it will be returned as a new array. So if you had a range of numbers 1 through 10 and you wanted to square each of them, you'd do this: </p>
               <pre><code>
                 range_mapped_to_array = (1..10).map { |x| x * x }
-              </code></pre>
-            <p>And get this back:
-            </p>
-            <p><pre><code>
-              #=>[1, 4, 9, 25, 36, 49, 64, 81, 100]
+                #=> [1, 4, 9, 25, 36, 49, 64, 81, 100]
             </code></pre></p>
             <p>But what if you wanted to permanently make a change to your data?</p>
             <p>That's where #map! comes in. What's the difference?</p>
