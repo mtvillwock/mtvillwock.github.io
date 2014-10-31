@@ -3,9 +3,9 @@
 <html>
  <head>
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <link rel="stylesheet" href="/path/to/styles/default.css">
-  <script src="/path/to/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
  <title>
 Just Git'ing Started: Enumerable Methods
  </title>
@@ -41,7 +41,7 @@ Just Git'ing Started: Enumerable Methods
           <h3>Enumer-What?</h3>
             <p>Enumerable. Enum. Enumerator. These words come up a lot in the Ruby documentation. But what the heck do they mean, and why should you care?</p>
             <p>Here's my pitch.</p>
-            <h3>Keep It <s>Simple<s> Concise</h3>
+            <h3>Keep It <s>Simple</s> Concise</h3>
             <p><a href="http://ruby-doc.org/core-2.0/Enumerable.html" target="blank">Enumerable</a> is a Module in Ruby that is used in many different Classes, including arrays, hashes, and ranges.
             <blockquote>"The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection." ~ Ruby Documentation, Enumerable</blockquote>
               Essentially it grants a Class (whether it is one you made, or a pre-built one), the ability to use <i>variations</i> of the <a href="http://ruby-doc.org/core-2.0/Array.html#method-i-each">#each</a> method, such as <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-find" target="blank">#find</a>, <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-group_by" target="blank">#group_by</a>, and <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-map" target="blank">#map</a>.</p>
@@ -84,7 +84,7 @@ Just Git'ing Started: Enumerable Methods
             <p>Tada! Now you have an array of squared numbers that are floated (they have a decimal instead of being an integer). And they'll stay that way. I didn't have to assign a new variable name to the floated version of the array, because the original array that I created from mapping the range was destructively modified, but I did to illustrate what was happening.</p>
 
             <p>However, thanks to my superfluous but descriptive variable, I now have two arrays with different names and the same transformed contents. Oops! Just something to remember. Be careful with 'destructive' methods, they have that descriptive adjective for a reason!</p>
-            <p>Note: Technically, #map! is an Array method, but using #map returns an array, so you can use #map to store something in an array and then permanently alter than array by using the #map! method.</p>
+            <p>Note: Technically, #map! is an Array method, but using #map returns an array, so you can use #map to store something in an array and then permanently alter that array by using the #map! method.</p>
             <p>I hope this explanation of the Enumerable module and the Enumberable#map method made sense.</p>
             <p>Thanks for reading, and please leave feedback for me on <a href="https://github.com/mtvillwock" target="blank">GitHub</a> in my profile under issues, or drop me a line on <a href="http://www.twitter.com/mtvillwock" target="blank">Twitter</a>.</p>
         </div>
