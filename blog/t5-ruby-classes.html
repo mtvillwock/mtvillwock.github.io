@@ -251,7 +251,7 @@ p deck = DeckOfCards.new</code></pre>
               puts @shuffled_deck
             end
             </code></pre></p>
-            <p>This does method tells the user "Let's shuffle 'em up.". It then creates an instance variable called @shuffled_deck which is an Array made up of shuffled values from key/value pairings in the @deck Hash, which it then prints. You can see how using instance variables instead of redefining local variables in each method can be helpful for transferring information and reducing redundancy.</p>
+            <p>This method tells the user "Let's shuffle 'em up.". It then creates an instance variable called @shuffled_deck which is an Array made up of shuffled values from key/value pairings in the @deck Hash, which it then prints. You can see how using instance variables instead of redefining local variables in each method can be helpful for transferring information and reducing redundancy.</p>
             <p><pre><code>
             def random_card
               @random_card = @shuffled_deck.shuffle![0]
@@ -269,7 +269,7 @@ p deck = DeckOfCards.new</code></pre>
                 <li>New instances of a class are initialized with attributes determined by the initialize method</li>
               </ul>
             </p>
-            <p>I mention inheritance or attribute reader/writer methods, but trust me, those are awesome too. I'll just say a little here. Inheritance basically lets you have a class inherit the traits of a class above it. This works similarly to genetics and zoological classification (humans love categorizing things, don't we?). Attribute reader and writer methods are a way of saving time/code. Simply put, this:
+            <p>I mention inheritance or attribute reader/writer methods, but trust me, those are awesome too. I'll just say a little here. Inheritance basically lets you have a class inherit the traits of a class above it. This works similarly to genetics and <a href="http://en.wikipedia.org/wiki/Biological_classification">biological classification</a> (humans love categorizing things, don't we?). Attribute reader and writer methods are a way of saving time/code. Simply put, this:
             </p>
             <p><pre><code>
               def age
