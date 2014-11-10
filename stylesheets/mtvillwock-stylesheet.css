@@ -74,6 +74,10 @@ a:visited {
   width: 85%;
 }
 
+#navbar ul {
+  text-align: center;
+}
+
 #navbar li {
   display: inline;
 }
