@@ -1,6 +1,6 @@
 /*Template Stylesheet for DBC Blog*/
 body{
-    background-color:#DCDCDC;
+    background-color:#0D355A;
 }
 
 p {
@@ -9,7 +9,7 @@ p {
 }
 
 #header{
-    background-color:#00CCFF;
+    background-color:#D1E5E1;
     border-radius: 15px;
     /*curves all corners of div*/
     padding: 10px;
@@ -93,6 +93,7 @@ h2{
 }
 
 #content {
+    background-color: #FFFBDF;
     margin: 20px;
     padding: 40px;
     border: 3px solid #cdcdcd;
@@ -107,7 +108,7 @@ h2{
 }
 
 #footer{
-    background-color:#00BFFF;
+    background-color:#D1E5E1;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     clear: both;
