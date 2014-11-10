@@ -8,7 +8,7 @@ Because it isn't being used */
 body {
   margin: 0;
   padding: 0;
-  background-color: #CAF4FF;
+  background-color: #0D355A;
 }
 
 h1 {
@@ -60,11 +60,11 @@ a {
 }
 
 a:visited {
-  color: maroon;
+  color: red;
 }
 
 #header {
-  background-color: #B9FFB8;
+  background-color: #D13531;
   border-radius: 15px;
   color: #1200B2;
   margin-left: 7%;
