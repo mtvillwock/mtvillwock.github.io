@@ -64,7 +64,7 @@ a:visited {
 }
 
 #header {
-  background-color: #D13531;
+  background-color: #D135E1;
   border-radius: 15px;
   color: #1200B2;
   margin-left: 7%;
@@ -124,11 +124,11 @@ li a {
 
 /* work.html SPECIFIC CONTENT*/
 
+/* Not using right now
 #CTA {
 background-color: orange;
 border-radius: 20px;
 clear: both;
-/*color:#FFDDAA;*/
 height: 100px;
 padding: 15px;
 margin-left: auto;
@@ -144,9 +144,10 @@ text-align: center;
   max-height: 80px;
   max-width: 80px;
 }
+*/
 
 #footer {
-  background-color: #B9FFB8;
+  background-color: #D135E1;
   border-radius: 15px;
   clear: both;
   color: #1200B2;
