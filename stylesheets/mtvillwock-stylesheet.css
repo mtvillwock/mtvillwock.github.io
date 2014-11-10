@@ -109,42 +109,6 @@ li a {
   text-align: center;
 }
 
-#content-block img {
-  float: left;
-  height: 70px;
-  width: 70px;
-
-}
-
-/*END index.html SPECIFIC CONTENT*/
-
-/* blog.html SPECIFIC CONTENT*/
-
-/* profile.html SPECIFIC CONTENT*/
-
-/* work.html SPECIFIC CONTENT*/
-
-/* Not using right now
-#CTA {
-background-color: orange;
-border-radius: 20px;
-clear: both;
-height: 100px;
-padding: 15px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 20px;
-margin-bottom: 20px;
-max-width: 400px;
-text-align: center;
-}
-
-#CTA img {
-  float: left;
-  max-height: 80px;
-  max-width: 80px;
-}
-*/
 
 #footer {
   background-color: #D1E5E1;
