@@ -52,18 +52,18 @@ Just Git'ing Started: Variable Scope in Ruby
             <p>Class variables are denoted with the @@ notation and must be initialized (have a value set) at creation.</p>
           <h3>Instance Variables</h3>
             <p>The little brother to class variables, instance variables can be accessed by one instance (see where that name comes from?) of a class. More precise than their class variable brethren, instance variables are great for when you have information within an instance of a class that you want to access at multiple points throughout that class.</p>
-            <p><pre><code>
+            <p><pre><code id="ruby">
 class Spy
   def initialize(location)
     @my_location = location
   end
   def call_for_extraction(hot_spot)
-    @my_location = “14th and Richmond”
-    puts “I need an extraction team ASAP at #{@my_location} now!”
+    @my_location = "14th and Richmond"
+    puts "I need an extraction team ASAP at #{@my_location} now!"
   end
   def mission_complete(new_location)
-    @my_location = “just outside target coordinates”
-    puts “The job is done. I’m #{@my_location}, heading to the rendezvous.”
+    @my_location = "just outside target coordinates"
+    puts "The job is done. I'm #{@my_location}, heading to the rendezvous."
   end
 end
 </code></pre></p>
