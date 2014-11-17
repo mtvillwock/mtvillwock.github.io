@@ -85,7 +85,8 @@ end
 </code></pre></p>
             <p>Constants are written using a capital letter as the first letter (and sometimes in ALL_CAPS). </p>
           <h3>Closing the Scope</h3>
-            <p>Based on my limited personal experience, I would say that instance variables are far and away my favorite variables to work with because they are accessible throughout an entire class. Local variables are helpful when iterating through loops, and if you need a once-of value in a pinch. Class variables are cool, but can mess things up in a hurry (like if you changed the @@wheels variable on your class Automobile to 18 because you were making an instance of that class called semi_truck… and now all of your other instances of class Automobile have 18 wheels. Global variables bring even more volatility to the table. Constants I could see using on occasion, but for now, I like to keep my information in the areas that I know it needs to be and nowhere else.</p>
+            <p>Based on my limited personal experience, I would say that instance variables are far and away my favorite variables to work with because they are accessible throughout an entire class. Local variables are helpful when iterating through loops, and if you need a once-of value in a pinch.</p>
+              <p>Class variables are cool, but can mess things up in a hurry, like if you changed the @@wheels variable on your class Automobile to 18 because you were making an instance of that class called semi_truck. Now all of your other instances of class Automobile would have 18 wheels. Global variables bring even more volatility to the table. Constants I could see using on occasion, but for now, I like to keep my information in the areas that I know it needs to be and nowhere else.</p>
             <p>Hopefully this post left you feeling well-acquainted with Ruby's variables. Thanks for reading!</p>
         </div>
       </div>
