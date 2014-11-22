@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Game</title>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/football_game-stylesheet.css">
-  <script src="/User/admin/Desktop/DBC/phase-0-unit-3/week-7/5-design-cc-mission-solo-challenge/my_solution.js"></script>
 </head>
 
 <body>
-  <header id="header">
+  <style type="text/css">
+#field {
+  width: 1200px;
+  height: 564px;
+  background-image: url("../Users/admin/Desktop/DBC/mtvillwock.github.io/imgs/football_field.png");
+  position: relative;
+  margin: 20px;
+  padding: 0px;
+}
+
+#packer {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-image: url("../Users/admin/Desktop/DBC/mtvillwock.github.io/imgs/packer_helmet.jpg")
+  left: 0px;
+  top: 0px;
+}
+
+#ball {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url("../Users/admin/Desktop/DBC/mtvillwock.github.io/imgs/football.jpg")
+  top: 550px;
+  left: 100px;
+}
+
+#bear1 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-image: url("../Users/admin/Desktop/DBC/mtvillwock.github.io/imgs/bears_helmet.jpg")
+  left: 600px;
+  top: 600px;
+}
+
+#bear2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-image: url("../Users/admin/Desktop/DBC/mtvillwock.github.io/imgs/bears_helmet_copy.jpg")
+  left: 800px;
+  top: 400px;
+}
+
+  </style>
+
+
+  <div>
     <h2>Last Chance for the Packers</h2>
     <p>The Packers are receiving the ball with little time on the clock. Can you return the kick and win the game without getting tackled by the Bears players?</p>
-  </header>
+  </div>
 
   <div id="field">
     <div id="packerHelmet"></div>
@@ -23,9 +71,14 @@
     <p>Use the arrow keys to move your player. Pick up the ball by running over it. Score by moving your player with the ball to the endzone. If you run into the Bears players or out of bounds, you lose.</p>
   </div>
 
-  <footer id="footer">
+  <div>
     <p><a href="http://mtvillwock.github.io">Back to home</a></p>
-  </footer>
+  </div>
+
+<script type="text/javascript">
+
+</script>
+
 
 </body>
 </html>
