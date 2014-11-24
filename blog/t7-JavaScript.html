@@ -78,8 +78,8 @@ packer.move_right
             <p>The code above would return this when run:</p>
             <p>
             <pre><code>
-#=> Micah Hyde is at the 10 yard line, outside the left hash.
-#=> Micah Hyde is at the 20 yard line, outside the left hash.
+#=> Micah Hyde is at the 10 yard line.
+#=> Micah Hyde is at the 20 yard line.
             </code></pre>
             </p>
             <p>Pretty simple, right? You make a new instance of the class FootballPlayer, which is initialized with a name that you provide, and some important variables like his location (x and y) and whether or not he has the ball or is down. It also gives him two methods: status (which I didn't include here but is a long method that checks where is he and then gives a response based on many different possible conditions) and `move_right`, which moves the player right and then calls the aforementioned `status` method. But what does that look like in JavaScript?</p>
@@ -110,8 +110,8 @@ packer = new football_player("Micah Hyde")
 packer.status();
 packer.moveUp();
 
-#=> Micah Hyde is at the 10 yard line, outside the left hash.
-#=> Micah Hyde is at the 20 yard line, outside the left hash.
+#=> Micah Hyde is at the 10 yard line.
+#=> Micah Hyde is at the 20 yard line.
               </code></pre>
             </p>
             <p>Like before, this gives us an object (the football player) with the properties `name`, `hasBall`, and `down` as well as the function `moveRight`. These are respectively equivalent to the instance variables in the `def initialize` method and the `def move_right` method in the Ruby class above. As you can see, the outputs are similar.</p>
