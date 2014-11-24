@@ -7,13 +7,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
  <title>
-<!--Title Goes Here-->
+Just Git'ing Started: Enter JavaScript
  </title>
  </head>
    <body>
        <div id="header">
            <a href="http://mtvillwock.github.io"><h1>mtvillwock.github.io</h1></a>
-           <h2><!-- Blog title here Just Git'ing Started // Let's Get Cooking --></h2>
+           <h2>Just Git'ing Started: Enter JavaScript</h2>
            <ul>
                <li><a href="http://mtvillwock.github.io/about">About</a></li>
         <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
@@ -33,22 +33,91 @@
        </div>-->
 
         <div id="right">
-         <h2>Article Title</h2>
-         <p id="date">Date</hp>
+         <h2>JavaScript Constructor Functions versus Ruby Classes</h2>
+         <p id="date">Nov. 23rd, 2014</hp>
          <!-- Add Date-->
         <div id="content">
-          <h3></h3>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-          <h3></h3>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+          <h3>And then there was JavaScript</h3>
+          <p>This week DBC pulled a mean trick on me. Well, on all of us boots. What trick is that?</p>
+          <p>JavaScript.</p>
+          <p>Now, I'm not going to rant about JavaScript too much because I actually don't think it is that bad. Rather I just was frustrated at times making the transition from Ruby to JavaScript. So what are the differences between these two object-oriented languages? There are many. But let's start with one that gave me trouble (until I read <a href="http://www.javascriptkit.com/javatutors/oopjs2.shtml">this</a>): Ruby Classes versus JavaScript constructor functions.</p>
+          <h3>Ruby Classes</h3>
+            <p>You've seen these bad boys before. Classes are used to model real-life objects, like a person or a car or a tool. For example:</p>
+            <p>
+              <pre><code>
+class FootballPlayer
+  def initialize(name)
+    @name = name;
+    @has_ball = false;
+    @down = false;
+    @x = 1
+    @y = 5
+  end
+
+  def status
+  # Convoluted method here
+  end
+
+  def move_right
+    if @down == true
+    puts "#{@name} is down. The game is over."
+    else
+    @x += 1
+    puts status
+    end
+  end
+
+end
+
+packer = FootballPlayer.new("Micah Hyde")
+packer.status
+packer.move_right
+
+              </code></pre>
+            </p>
+            <p>The code above would return this when run:</p>
+            <p>
+            <pre><code>
+#=> Micah Hyde is at the 10 yard line, outside the left hash.
+#=> Micah Hyde is at the 20 yard line, outside the left hash.
+            </code></pre>
+            </p>
+            <p>Pretty simple, right? You make a new instance of the class FootballPlayer, which is initialized with a name that you provide, and some important variables like his location (x and y) and whether or not he has the ball or is down. It also gives him two methods: status (which I didn't include here but is a long method that checks where is he and then gives a response based on many different possible conditions) and `move_right`, which moves the player right and then calls the aforementioned `status` method. But what does that look like in JavaScript?</p>
+          <h3>JavaScript constructor functions</h3>
+            <p>The thing with JavaScript is that it is not a pretty language. Ruby does everyone a favor by clearly delineating things in a relatively English-like manner. Not so, JavaScript. Here is the same "class" from above written as a JavaScript constructor function:</p>
+            <p>
+              <pre><code>
+function football_player (name) {
+  this.name = name;
+  this.hasBall = false;
+  this.down = false;
+
+  this.status = function() {
+  // insufferable amounts of conditional statements here
+}
+
+  this.moveRight = function() {
+    if (this.down === true) {
+    console.log(this.name +" is down. The game is over.");
+  }
+    else {
+    this.x +=1; this.status();
+  }
+  }
+}
+
+packer = new football_player("Micah Hyde")
+packer.status();
+packer.moveUp();
+
+#=> Micah Hyde is at the 10 yard line, outside the left hash.
+#=> Micah Hyde is at the 20 yard line, outside the left hash.
+              </code></pre>
+            </p>
+            <p>Like before, this gives us an object (the football player) with the properties `name`, `hasBall`, and `down` as well as the function `moveRight`. These are respectively equivalent to the instance variables in the `def initialize` method and the `def move_right` method in the Ruby class above. As you can see, the outputs are similar.</p>
+            <p>When you get down to it, both snippets of code are doing the same thing. The difference is in the syntax and in some of the rules of what interacts with what. In Ruby you define the scope of your variables by given them a prefix like $, @, or @@. This allows the variables to be used beyond the local scope of whatever code block or method they are being used in. But in JavaScript the scope of your variables (and functions) is based on where they are inside of a function. This is what tripped me up. In Ruby you can initialize an instance variable and use it throughout all the other methods in a class. In JavaScript the scope of your variable depends on where you put it inside of a large function.</p>
+            <p>I suppose in hindsight, JavaScript makes sense with its variables, insofar as having their locality based on how deep or shallowly they are located inside of a large function or method (a method in JavaScript meaning a function, such as moveRight above, inside of a larger function that represents what would be a class in Ruby). I like the way the scope of Ruby's variables are distinguished by special symbols and not by where they are written. But JavaScript is an essential tool for working with web browsers, and as such I will not let a little thing like syntax keep me from adding it to my toolbox.</p>
+            <p>I hope this post made sense and taught you a bit about one difference between Ruby and JavaScript. Thanks for reading!</p>
         </div>
       </div>
 
