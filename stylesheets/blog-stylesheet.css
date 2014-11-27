@@ -13,7 +13,6 @@ p {
     border-radius: 15px;
     margin: auto;
     max-width: 85%;
-    padding: 10px;
 }
 
 h1{
@@ -26,8 +25,7 @@ h1{
 
 #header li{
     display:inline;
-    margin-top: -100px;
-
+    margin: auto;
 }
 
 #header li a{
@@ -78,7 +76,7 @@ h2 {
     background-color: #D1E5E1;
     font-family: Georgia, Helvetica, sans-serif;
     font-size: 24px;
-    padding: 5px;
+    margin: auto;
     text-align:center;
 }
 
