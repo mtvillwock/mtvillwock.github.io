@@ -18,7 +18,7 @@ body{
     text-decoration: none;
 }
 
-#social_icons img {
+#social_icons li {
     display: inline;
     float: right;
     max-height: 50px;
@@ -42,7 +42,7 @@ body{
     margin-top: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    position: relative;
+    position: absolute;
     text-align: center;
     width: 85%;
 }
@@ -56,7 +56,6 @@ h1{
 }
 
 h2{
-    background-color: #D1E5E1;
     font-family: Georgia, Helvetica, sans-serif;
     font-size: 24px;
     text-align:center;
