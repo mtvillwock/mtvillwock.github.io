@@ -84,38 +84,146 @@
     <h1 id="#top">
       <a href="http://mtvillwock.github.io">MTVillwock.GitHub.io</a>
     </h1>
-    <h2>Cheatsheet</h2>
+    <h2>JavaScript Cheatsheet</h2>
   </header>
 
    <nav>
     <h3>Topics</h3>
      <ul>
-       <li><a href="#each">#each</a></li>
-       <li><a href="#map">#map</a></li>
-       <li><a href="#reduce">#reduce</a></li>
-       <li><a href="#select">#select</a></li>
+       <li><a href="#constructors">Constructor Function</a></li>
+       <li><a href="properties">Properties</a></li>
+       <li><a href="#for_loops">For Loops</a></li>
+       <li><a href="#variable_scope">Variable Scope</a></li>
+       <li><a href="#bracket_notation">Bracket Notation</a></li>
      </ul>
    </nav>
 
     <div id="wrapper">
         <div class="cheat">
-        <h3 id="each">Each</h3>
-        <p><pre><code>
-        def initialize
-        </code></pre></p>
-        <p>def initialize</p>
+        <h3 id="constructors">Constructor Functions</h3>
+          <p><pre><code>
+          function objectName (optional_parameter) {
+            var properties: {
+              property: "thing",
+              other: 23
+            };
+            function objectAction (optional_parameter) {
+              this.method(); // objectName does something
+            };
+          }
+
+          // Example
+
+          function rookieCoder (name, age, education, language) {
+            var properties: {
+              name: name,
+              age: age,
+              education: "Dev Bootcamp",
+              language: "Ruby"
+            };
+            function evaluateCode (string_of_code)
+            if (string_of_code.length > 20) {
+              console.log("Man, that's a long method. Let's refactor.")
+            }
+            else {
+              console.log("Succinct code. How refreshing.")
+            }
+          }
+          </code></pre></p>
+          <p>Think of the constructor as the class, the properties (which don't need to be a variable, they can just be an object containing property : value pairs) as the initialize method, and the functions as methods (because functions inside functions are methods). Another useful resource to check out for this is <a href="http://code.tutsplus.com/tutorials/the-basics-of-object-oriented-javascript--net-7670">here</a>.</p>
         </div>
         <div class="cheat">
-        <h3 id="each">Map</h3>
-          <p>Create new array of elements. Destructive version transforms the returned array.</p>
+          <h3 id="properties">Properties</h3>
+            <p><pre><code>
+            objectName = {
+              property: value
+              object_full_of_properties: {
+                subProperty: subvalue
+              }
+            }
+
+            // Example
+
+            laptop = {
+            make: "Apple"
+            model: "2013 MacBook Retina Pro"
+            programs: {
+              browsers: ["Chrome", "Firefox", "Safari"]
+              textEditors: ["Sublime Text 2", "Atom", "Brackets", "Text Wrangler", "Xcode"]
+            };
+          };
+            </code></pre></p>
+            <p>Properties can be written manually as shown above, or by using dot or bracket notation. For more on that, see <A HREF="#bracket_notation">Bracket Notation</A>.</p>
         </div>
         <div class="cheat">
-          <h3 id="reduce">Reduce</h3>
-          <p>Used to sum numbers while iterating.</p>
+          <h3 id="for_loops">For Loops</h3>
+            <p><pre><code>
+            function average(array) {
+            total = 0;
+            for (i=0; i<array.length; i++) {
+            total+=array[i];
+            }
+            return (total/array.length);
+            }
+            </code></pre></p>
+            <p>The main thing with `for` loops is that they are a lot like #each loops in Ruby, just uglier. Read them like this:</p>
+            <p><pre><code>function average(array) {</code></pre></p>
+            <p>The function, functionName, and parameters are the first line. Open the code block.</p>
+            <p><pre><code>total = 0; // storage = [];</code></pre></p>
+            <p>This creates a variable to edit. It could just as easily be an empty array or object.</p>
+            <p><pre><code>for (i=0; i<array.length; i++) {</code></pre></p>
+            <p>This is three things in one. It sets the variable "i" to 0, and then makes a conditional which will occur while "i" is less than array.length. That conditional is increasing "i" by 1.</p>
+            <p>This is just a complicated way of saying "Iterate through each element, one at a time, stopping once you've gone through each of them."</p>
+            <p><pre><code>total+=array[i];</code></pre></p>
+            <p>This line is example-specific. It is summing all the numbers found while iterating through the array and setting "total" equal to that value.</p>
+            <p><pre><code>}</code></pre></p>
+            <p><pre><code>return (total/array.length); </code></pre></p>
+            <p>Again, example-specific. This just divides the variable "total" by the length of the parameter "array". It then returns the result.</p>
+            <p><pre><code>}</code></pre></p>
+            <p>Closing the function. Don't forget those curly brackets!!</p>
         </div>
+        <!--Will add this later
         <div class="cheat">
-        <h3>Select</h3>
-        <p>Selects items from array.</p>
+          <h3 id="variable_scope">Variable Scope</h3>
+            <p><pre><code>
+            def initialize
+            </code></pre></p>
+            <p>def initialize</p>
+        </div>
+      -->
+        <div class="cheat">
+          <h3 id="bracket_notation">Using Bracket Notation to Add Properties</h3>
+            <p>Let's say we want to make the code below, but on the fly. How can we do that?</p>
+            <p><pre><code>
+          laptop = {
+            make: "Apple"
+            model: "2013 MacBook Retina Pro"
+            programs: {
+              browsers: ["Chrome", "Firefox", "Safari"]
+              textEditors: ["Sublime Text 2", "Atom", "Brackets", "Text Wrangler", "Xcode"]
+            };
+          };
+            </code></pre></p>
+            <p>With dot notation and bracket notation! How do those work?</p>
+            <p><pre><code>// Make an object literal
+          laptop = {};
+          // Make an object literal
+          laptop.make = "Apple";
+          // add the `make` property with a value of "Apple"
+          laptop["model"] = "2013 MacBook Pro";
+          // add the `model` property with a value  of "2013 MacBook Pro"
+          laptop["programs"] = {};
+          // add `programs` property with value of an object literal
+          // the value of `programs` will become the objects (property: value pairs) that are added to it in the next two steps
+          laptop["programs"]["browsers"] = ["Chrome", "Firefox", "Safari"];
+          // add `browsers` property with value of an array of different browsers to `programs` object literal (which is technically also a property of `laptop`)
+          laptop["programs"].textEditors = ["Sublime Text 2", "Atom", "Brackets", "Text Wrangler", "Xcode"];
+          // add `textEditors` property with value of an array of different text editors to `programs` object literal (which is a property of `laptop`)
+            </code></pre></p>
+            <p>There are some differences between dot and bracket notation in terms of what you can access and how. Read more <a href="https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d">here</a>. And remember: put those quotes around your properties! Like this:</p>
+            <p>
+            <pre><code>object["property"] = "getting accessed"</code></pre>
+            </p>
         </div>
       </div>
     <footer>
