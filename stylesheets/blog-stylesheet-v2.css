@@ -13,11 +13,14 @@ body{
 }
 
 #site_links {
-
+    display:inline;
+    text-align: center;
 }
 
 #social_icons {
-
+    display: inline;
+    max-height: 100px;
+    max-width: 100px;
 }
 
 #article {
@@ -70,8 +73,9 @@ p {
 
 a {
   color: #0d355a;
+  text-decoration: none;
 }
 
 a: visited {
-  color: 707020
+  color: #6a6;
 }
