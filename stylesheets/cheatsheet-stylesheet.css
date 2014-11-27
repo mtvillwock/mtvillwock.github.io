@@ -1,6 +1,6 @@
 /*Cheatsheet stylesheet*/
 
-    header {
+    #header {
       background-color: #D1E5E1;
       border-radius: 15px;
       color: #1200B2;
@@ -12,7 +12,7 @@
       width: 85%;
 }
 
-    nav {
+    #nav {
       background-color: #1ce;
       border-radius: 20px;
       height: 400px;
@@ -42,7 +42,7 @@
       z-index: 1;
     }
 
-    footer {
+    #footer {
       background-color: #D1E5E1;
       border-radius: 15px;
       clear: both;
