@@ -18,7 +18,7 @@ body{
     text-decoration: none;
 }
 
-#social_icons {
+#social_icons img {
     display: inline;
     float: right;
     max-height: 50px;
