@@ -9,18 +9,21 @@ body{
     border-radius: 15px;
     margin: 20px;
     padding: 10px;
-    max-width: 100%;
+    max-width: 85%;
 }
 
 #site_links {
     display:inline;
     text-align: center;
+    text-decoration: none;
 }
 
 #social_icons {
     display: inline;
-    max-height: 100px;
-    max-width: 100px;
+    float: right;
+    max-height: 50px;
+    max-width: 50px;
+    z-index: 2;
 }
 
 #article {
@@ -41,7 +44,7 @@ body{
     padding-bottom: 15px;
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 85%;
 }
 
 h1{
@@ -76,6 +79,6 @@ a {
   text-decoration: none;
 }
 
-a: visited {
+a:visited {
   color: #6a6;
 }
