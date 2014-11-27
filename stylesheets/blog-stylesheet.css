@@ -73,12 +73,13 @@ h1{
     position: relative;
 }
 
-h2{
+h2 {
+    /*consider removing background color and putting the h2 inside the content div in the html*/
     background-color: #D1E5E1;
     font-family: Georgia, Helvetica, sans-serif;
     font-size: 24px;
+    padding: 5px;
     text-align:center;
-    padding: 10px;
 }
 
 #date{
@@ -105,13 +106,12 @@ h2{
 
 #footer{
     background-color:#D1E5E1;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
     clear: both;
     margin-top: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 85%;
 }
