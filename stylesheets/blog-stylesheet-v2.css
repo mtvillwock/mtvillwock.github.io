@@ -1,0 +1,77 @@
+/*Blog Stylesheet v2 (HTML5)*/
+/*Template Stylesheet for DBC Blog*/
+body{
+    background-color:#0D355A;
+}
+
+#header {
+    background-color:#D1E5E1;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#site_links {
+
+}
+
+#social_icons {
+
+}
+
+#article {
+    background-color: #FFFBDF;
+    border: 3px solid #cdcdcd;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    width:70%;
+}
+
+#footer {
+    background-color:#D1E5E1;
+    border-radius: 15px;
+    clear: both;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    font-family: Georgia, sans-serif;
+    font-size: 36px;
+    text-align:center;
+    color: navy;
+    margin-top: 20px;
+}
+
+h2{
+    background-color: #D1E5E1;
+    font-family: Georgia, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align:center;
+    padding: 10px;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+  color: #0d355a;
+}
+
+a: visited {
+  color: 707020
+}
