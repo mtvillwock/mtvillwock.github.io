@@ -11,9 +11,9 @@ p {
 #header{
     background-color:#D1E5E1;
     border-radius: 15px;
+    margin: auto;
+    max-width: 85%;
     padding: 10px;
-    max-width: 100%;
-
 }
 
 h1{
@@ -48,7 +48,7 @@ h1{
 }
 
 #img1{
-    margin-left: 45em;
+    margin-left: 40em;
 
 }
 
@@ -64,13 +64,6 @@ h1{
     margin-left:10px;
 }
 
-/*Left half of body
-#left{
-    float:left;
-    width:20%;
-    white-space: normal;
-    margin-left: auto;
-}(menu / about author)*/
 
 /*Right half of body (blog post)*/
 #right{
