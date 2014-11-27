@@ -28,7 +28,6 @@
       background-color: #FFFBDF;
       margin: auto;
       position: relative;
-      text-align: center;
       width: 80%;
     }
 
@@ -37,7 +36,7 @@
       position: relative;
       margin-left: 150px;
       margin-right: auto;
-      width: 70%;
+      width: 80%;
       overflow: auto;
       z-index: 1;
     }
