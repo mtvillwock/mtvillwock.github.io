@@ -1,0 +1,71 @@
+/*Cheatsheet stylesheet*/
+
+    header {
+      background-color: #D1E5E1;
+      border-radius: 15px;
+      color: #1200B2;
+      margin-left: 7%;
+      margin-right: auto;
+      margin-top: 20px;
+      position: relative;
+      text-align: center;
+      width: 85%;
+}
+
+    nav {
+      background-color: #1ce;
+      border-radius: 20px;
+      height: 400px;
+      margin: 10px;
+      padding: 10px;
+      position: fixed;
+      text-align: center;
+      width: 150px;
+      z-index: 2;
+    }
+
+    .cheat {
+      background-color: #FFFBDF;
+      margin: auto;
+      position: relative;
+      text-align: center;
+      width: 80%;
+    }
+
+    #wrapper {
+      background-color: #0D355A;
+      position: relative;
+      margin-left: 150px;
+      margin-right: auto;
+      width: 70%;
+      overflow: auto;
+      z-index: 1;
+    }
+
+    footer {
+      background-color: #D1E5E1;
+      border-radius: 15px;
+      clear: both;
+      color: #1200B2;
+      height: 50px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-left: 7%;
+      margin-right: auto;
+      position: absolute;
+      text-align: center;
+      width: 85%;
+}
+
+    a {
+      color: #1200B2;
+    }
+
+    a: visted {
+      color: red;
+    }
+
+    li {
+      margin: 10px;
+    }
+
