@@ -1,0 +1,63 @@
+<!--HTML Skeleton for DBC Blog-->
+<doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+ <title>
+Just Git'ing Started: AngularJS
+ </title>
+ </head>
+   <body>
+       <div id="header">
+           <a href="http://mtvillwock.github.io"><h1>mtvillwock.github.io</h1></a>
+           <h2>Just Git'ing Started</h2>
+           <ul>
+               <li><a href="http://mtvillwock.github.io/about">About</a></li>
+                <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
+                <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
+                 <a href="http://www.twitter.com/mtvillwock"><img id="img1" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/twitter.png" /></a>
+                 <a href="https://www.facebook.com/matthew.villwock"><img id="img2" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/facebook.png" /></a>
+                 <a href="https://www.linkedin.com/in/matthewvillwock"><img id="img3" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/linkedin.png" /></a>
+                 <a href="https://plus.google.com/+MatthewVillwock"><img id="img4" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/googleplus.png" /></a>
+          </ul>
+       </div>
+
+        <div id="right">
+         <h2>AngularJS: The What and the Why</h2>
+        <div id="content">
+
+          <h3>What is AngularJS?</h3>
+
+            <p><a href="https://angularjs.org/">AngularJS</a> is a JavaScript MVC framework for web applications. Two months ago I probably wouldn't have known what that meant, and it's possible I still don't fully understand it yet, but I'll try to explain as best I can.</p>
+            <p>Model-view-controller (MVC) is a method of structuring how a user interacts with software. Each of the three parts – Model, View, and Controller have a different purpose. The model generally contains the data and rules/logic for how the application operates. This, as far as I understand it, includes the database and objects in the back-end code. The view is "<a href="https://www.youtube.com/watch?v=eTdVkgF_Slo">what the user sees</a>," which in the case of web application means whatever is in the browser window. The controller, as its name implies, controls actions that the view and the model take. This includes things like updating a database or scrolling up and down on a page. The controller is basically a middle man between the view and the model.</p>
+
+            <p><a href="http://commons.wikimedia.org/wiki/File:MVC-Process.svg#mediaviewer/File:MVC-Process.svg"><img src="http://upload.wikimedia.org/wikipedia/commons/a/a0/MVC-Process.svg" alt="MVC-Process.svg" height="480" width="436"></a><br>"<a href="http://commons.wikimedia.org/wiki/File:MVC-Process.svg#mediaviewer/File:MVC-Process.svg">MVC-Process</a>" by <a href="//commons.wikimedia.org/wiki/User:RegisFrey" title="User:RegisFrey">RegisFrey</a> - <span class="int-own-work">Own work</span>. Licensed under Public domain via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.</p>
+            <p>Okay, so Angular is a JavaScript MVC. Cool. But what does it actually do? In this <a href="http://www.infoworld.com/article/2612801/javascript/what-s-so-special-about-google-s-angularjs.html">article from InfoWorld</a>, Misko Hevery explains, "We take HTML, which is really good at static documents, and through this concept of directives, we add new markup to HTML that turns static content into dynamic content." Dynamic HTML... say what?</p>
+            <p>Yep, dynamic HTML. Basically what you do is use custom HTML tags to enable HTML pages to do things they were never designed to do. Kind of like how humans use planes to fly (or whatever other clever analogy you prefer). Maybe that doesn't sound like much, but here are <a href="https://builtwith.angularjs.org/">some examples</a> of what you can do with AngularJS.</p>
+            <p><img src="https://docs.angularjs.org/img/guide/concepts-databinding1.png">Source: <a href="https://docs.angularjs.org/guide/concepts">AngularJS Concepts</a></p>
+            <p>Is any of this revolutionary? Probably not. After all, you can do similar things with other methods (isn't that the story of most programming?). For example, jQuery is a popular library used for many front-end web app and/or design projects. So why use AngularJS?</p>
+            <p></p>
+
+          <h3>Why is AngularJS useful?</h3>
+
+            <p><img src="http://image.slidesharecdn.com/cfakepathimplementinabcarchitecture-100129083424-phpapp01/95/implementing-a-business-continuity-architecture-38-728.jpg?cb=1295374054"> Source: <a href="http://www.slideshare.net/cjanoch/implementing-a-business-continuity-architecture">Implementing A Business Continuity Architecture by Christopher Janoch</a></p>
+            <p>The thing with code is that, like tribbles, it can multiply in problematic fashion. Sometimes such large amounts of code are necessary just to begin. I'm talking about boilerplate code, which is something that AngularJS cuts down on.</p>
+            <p><img src="http://img2.wikia.nocookie.net/__cb20090530212257/memoryalpha/en/images/f/fa/Kirk_surrounded_by_Tribbles.jpg">
+              This is what wading through a ton of boilerplate code can feel like.<a href="http://en.memory-alpha.org/wiki/Tribble">Source: Memory Alpha</a></p>
+            <p>It's CRUD-y. CRUD, or "create, read, update, delete" is a common application style, used for everything from spreadsheets to booking plane tickets. "<a href="https://docs.angularjs.org/guide/introduction">Angular was built with the CRUD application in mind</a>". What this means to you is that unless you are building a game (in which case you could still probably use it), AngularJS is most likely built to handle what you're trying to make.</p>
+            <p>Other cool things about AngularJS is that it is "<a href="http://www.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">super-easily testable</a>" and you are "<a href="https://docs.angularjs.org/guide/introduction">freed from low-level DOM manipulation tasks</a>," both of which sound pretty great to me.</p>
+            <p>I hope I've intrigued you with this discussion of AngularJS. Do you already have experience with other JavaScript frameworks? If so, what is your favorite and why?</p>
+
+            <p id="date">Published on <em>November 30th, 2014</em> by <b>Matthew Villwock</b></p>
+        </div>
+      </div>
+
+       <div id="footer">
+       <a href="http://mtvillwock.github.io">Back to Blog</a>
+       </div>
+
+   </body>
+</html>
