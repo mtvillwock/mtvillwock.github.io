@@ -1,6 +1,6 @@
 /*Template Stylesheet for DBC Blog*/
 body{
-    background-color:#0D355A;
+    background-color: white;
 }
 
 p {
@@ -9,16 +9,16 @@ p {
 }
 
 #header{
-    background-color:#D1E5E1;
+    background-color:#d0d6e2;
     border-radius: 15px;
+    font-family: Helvetica, sans-serif;
     margin: auto;
     max-width: 85%;
 }
 
 h1{
-    font-family: Georgia, sans-serif;
+
     text-align:center;
-    color: navy;
     margin-top: 20px;
 }
 
@@ -28,13 +28,8 @@ h1{
 }
 
 #header li a{
-    color:#1200B2;
     text-decoration: none;
     padding: 5px;
-}
-
-#header li a:visited {
-    color: red;
 }
 
 #header img{
@@ -64,6 +59,7 @@ h1{
 
 /*Right half of body (blog post)*/
 #right{
+    font-family: Helvetica, sans-serif;
     width:70%;
     margin: auto;
     padding: 10px;
@@ -72,8 +68,8 @@ h1{
 
 h2 {
     /*consider removing background color and putting the h2 inside the content div in the html*/
-    background-color: #D1E5E1;
-    font-family: Georgia, Helvetica, sans-serif;
+    background-color: #d0d6e2;
+    font-family: Helvetica, sans-serif;
     padding: 5px;
     text-align:center;
 }
@@ -86,7 +82,7 @@ h2 {
 }
 
 #content {
-    background-color: #FFFBDF;
+    background-color: #dedede;
     margin: 20px;
     padding: 40px;
     border: 3px solid #cdcdcd;
@@ -101,7 +97,7 @@ h2 {
 }
 
 #footer{
-    background-color:#D1E5E1;
+    background-color:#d0d6e2;
     border-radius: 15px;
     clear: both;
     margin-top: 20px;

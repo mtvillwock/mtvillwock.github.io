@@ -1,32 +1,27 @@
 /*mtvillwock.github.io stylesheet*/
-/* Commented out
-html {
-
-}
-Because it isn't being used */
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #0D355A;
+  background-color: white;
 }
 
 h1 {
-  font-family: Georgia, sans-serif;
+  font-family: Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
 h2 {
-  font-family: Georgia, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-family: Georgia, sans-serif;
+  font-family: Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -40,18 +35,9 @@ white-space: normal;
 }
 
 
-a {
-  color: #1200B2;
-}
-
-a:visited {
-  color: red;
-}
-
 #header {
-  background-color: #D1E5E1;
+  background-color: #d0d6e2;
   border-radius: 15px;
-  color: #1200B2;
   margin-left: 7%;
   margin-right: auto;
   margin-top: 20px;
@@ -76,7 +62,7 @@ li a {
 
 #social-icons {
   display: block;
-  max-height: 0px;
+  max-height: 20px;
   float: right;
   margin-right: 10px;
   margin-left: 10px;
@@ -88,7 +74,7 @@ li a {
 /*START index.html SPECIFIC CONTENT*/
 
 #content-block {
-  background-color: #FFFBDF;
+  background-color: #dedede;
   clear: both;
   margin-top: 20px;
   margin-right: auto;
@@ -101,10 +87,9 @@ li a {
 
 
 #footer {
-  background-color: #D1E5E1;
+  background-color: #d0d6e2;
   border-radius: 15px;
   clear: both;
-  color: #1200B2;
   height: 50px;
   margin-top: 30px;
   margin-bottom: 20px;

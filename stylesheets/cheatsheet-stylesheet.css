@@ -1,9 +1,8 @@
 /*Cheatsheet stylesheet*/
 
     #header {
-      background-color: #D1E5E1;
+      background-color: #d0d6e2;
       border-radius: 15px;
-      color: #1200B2;
       margin-left: 7%;
       margin-right: auto;
       margin-top: 20px;
@@ -25,14 +24,14 @@
     }
 
     .cheat {
-      background-color: #FFFBDF;
+      background-color: #dedede;
       margin: auto;
       position: relative;
       width: 80%;
     }
 
     #wrapper {
-      background-color: #0D355A;
+      background-color: white;
       position: relative;
       margin-left: 150px;
       margin-right: auto;
@@ -42,10 +41,9 @@
     }
 
     #footer {
-      background-color: #D1E5E1;
+      background-color: #d0d6e2;
       border-radius: 15px;
       clear: both;
-      color: #1200B2;
       height: 50px;
       margin-top: 30px;
       margin-bottom: 20px;
@@ -55,14 +53,6 @@
       text-align: center;
       width: 85%;
 }
-
-    a {
-      color: #1200B2;
-    }
-
-    a: visted {
-      color: red;
-    }
 
     li {
       margin: 10px;
