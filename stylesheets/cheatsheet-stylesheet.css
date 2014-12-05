@@ -1,5 +1,8 @@
 /*Cheatsheet stylesheet*/
 
+body{
+  font-family: Helvetica, sans-serif;
+}
     #header {
       background-color: #d0d6e2;
       border-radius: 15px;
