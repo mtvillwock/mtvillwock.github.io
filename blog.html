@@ -1,112 +1,145 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>DBC Blog | mtvillwock.github.io</title>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/mtvillwock-stylesheet.css">
-</head>
+
+  <head>
+    <title>DBC Blog | mtvillwock.github.io</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="../stylesheets/pages-bootstrap.css">
+
+  </head>
+
   <body>
-  <!-- Img, h1, links to profile, portfolio, blog, and ? pages Need social media links too. -->
-    <div id="header">
-      <!-- Header image if I find one. -->
-      <a href="http://mtvillwock.github.io"><h1>MTVillwock.GitHub.io</h1></a>
-      <h2>DBC Blog</h2>
-      <ul id="navbar">
-        <li><a href="http://mtvillwock.github.io/about">About</a></li>
-        <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
-        <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
-      </ul>
-      <ul id="social-icons">
-        <a href="http://www.twitter.com/mtvillwock"><img src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/twitter.png" "Twitter logo"></a>
-        <a href="https://www.facebook.com/matthew.villwock"><img src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/facebook.png" "Facebook logo"></a>
-        <a href="https://www.linkedin.com/in/matthewvillwock"><img src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/linkedin.png" "LinkedIn logo"></a>
-        <a href="https://plus.google.com/+MatthewVillwock"><img src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/googleplus.png" alt="Google+ logo"></a>
-        <a href="https://www.github.com/mtvillwock"><img src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/GitHub-Mark-32px.png" alt="Github logo"></a>
-      </ul>
-    </div>
-<!-- Links for now, eventually add RSS feed -->
-
-    <div id="content-block">
-      <div id="content-block">
-      <h3>Read About My Experience with Dev BootCamp</h3>
-        <p>Weeks 1-9 are about what I learned during the remote portion of DBC known as Phase 0.</p>
-      <hr>
-      <h4>Week 1:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t1-git-blog.html">Tech Post 1: Git and Version Control</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c1-chefs-kitchen.html">Culture Post 1: The DBC Mindset</a>
-        </p>
-      <h4>Week 2:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t2-css-design.html">Tech Post 2: CSS Design</a>
-        </p>
-      <h4>Week 3:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t3-arrays-hashes.html">Tech Post 3: Hashes and Arrays</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c3_thinking-style.html">Culture Post 3: Thinking Styles</a>
-        </p>
-      <h4>Week 4:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t4-enumerable-methods.html">Tech Post 4: Enumerable Methods</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c4-tech-issues.html">Culture Post 4: Tech Issues</a></p>
-      <h4>Week 5:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t5-ruby-classes.html">Tech Post 5: Ruby Classes</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c5-feedback.html">Culture Post 5: Pairing and Feedback</a>
-        </p>
-        <h4>Week 6:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t6-oop-concepts.html">Tech Post 6: Variable Scope</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c6-stereotype-threat.html">Culture Post 6: Stereotype Threat</a>
-        </p>
-        <h4>Week 7:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t7-JavaScript.html">Tech Post 7: JavaScript Constructors versus Ruby classes</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c7-values.html">Culture Post 7: Affirming Values against Stereotype Threat</a>
-        </p>
-        <h4>Week 8:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t8-tech.html">Tech Post 8: AngularJS</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c8-conflict.html">Culture Post 8: Dealing with Conflict</a>
-        </p>
-        <h4>Week 9:</h4>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/t9-bootstrap.html">Tech Post 9: Bootstrapping</a>
-        </p>
-        <p>
-          <a href="http://mtvillwock.github.io/blog/c9-questions.html">Culture Post 9: Asking Good Questions</a>
-        </p>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="http://mtvillwock.github.io/about">About</a></li>
+          <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
+          <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
+        </ul>
+        <ul class="pull-right">
+          <a href="http://www.twitter.com/mtvillwock"><img src="../icons/twitter.png" alt="Twitter"></a>
+          <a href="https://www.facebook.com/matthew.villwock"><img src="../icons/facebook.png" alt="Facebook"></a>
+          <a href="https://www.linkedin.com/in/matthewvillwock"><img src="../icons/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://plus.google.com/+MatthewVillwock"><img src="../icons/googleplus.png" alt="Google+"></a>
+          <a href="https://www.github.com/mtvillwock"><img src="../icons/github.png" alt="Github"></a>
+        </ul>
+      </div>
     </div>
 
-<!-- Div with CTA text, option to print resume/contact me.
-    <div id="CTA">
-      <a href="#"><img src=""></a>
-
-      <h3>Click here to <a href="mailto:mtvillwock@gmail.com">email</a> me.</h3>
-      <p>Or find me on social media.</p>
-    </div>-->
-
-<!-- Fix at bottom, full width, same links as header -->
-    <div id="footer">
-      <ul id="navbar">
-        <li><a href="http://mtvillwock.github.io/about">About</a></li>
-        <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
-        <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
-      </ul>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>mtvillwock.github.io</h1>
+        <h2>Never Finished</h2>
+      </div>
     </div>
 
+    <div class="article">
+
+    <div class="container">
+      <div class="row">
+            <div class="col-md-4">
+            <h2>Phase Zero</h2>
+            <p>Weeks 1-9 are about what I learned during the remote portion of DBC known as Phase 0.</p>
+            <hr>
+            <h4>Week 1:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t1-git-blog.html">Git and Version Control</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c1-chefs-kitchen.html">The DBC Mindset</a>
+            </p>
+            <h4>Week 2:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t2-css-design.html">CSS Design</a>
+            </p>
+            <h4>Week 3:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t3-arrays-hashes.html">Hashes and Arrays</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c3_thinking-style.html">Thinking Styles</a>
+            </p>
+
+            </div>
+            <div class="col-md-4">
+            <h2>Phase Zero</h2>
+            <p>Weeks 1-9 are about what I learned during the remote portion of DBC known as Phase 0.</p>
+            <hr>
+            <h4>Week 4:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t4-enumerable-methods.html">Enumerable Methods</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c4-tech-issues.html">Tech Issues</a></p>
+            <h4>Week 5:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t5-ruby-classes.html">Ruby Classes</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c5-feedback.html">Pairing and Feedback</a>
+            </p>
+            <h4>Week 6:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t6-oop-concepts.html">Variable Scope</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a>
+            </p>
+            </div>
+            <div class="col-md-4">
+            <h2>Phase Zero</h2>
+            <p>Weeks 1-9 are about what I learned during the remote portion of DBC known as Phase 0.</p>
+            <hr>
+            <h4>Week 7:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t7-JavaScript.html">JavaScript Constructors versus Ruby classes</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c7-values.html">Affirming Values against Stereotype Threat</a>
+            </p>
+            <h4>Week 8:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t8-tech.html">AngularJS</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c8-conflict.html">Dealing with Conflict</a>
+            </p>
+            <h4>Week 9:</h4>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/t9-bootstrap.html">Bootstrapping</a>
+            </p>
+            <p>
+            <a href="http://mtvillwock.github.io/blog/c9-questions.html"> Asking Good Questions</a>
+            </p>
+            </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="learn-more">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+      <h3>Phase</h3>
+      <p>I'm an aspiring web developer attending Dev Bootcamp in San Francisco. When I'm not hacking away at my keyboard, I enjoy reading, writing fiction, running, yoga, and watching my beloved Green Bay Packers.</p>
+      <p>Click <a href="http://mtvillwock.github.io/about">here</a> to read more about me.</p>
+        </div>
+      <div class="col-md-4">
+      <h3>View my projects</h3>
+      <p>See the <a href="http://mtvillwock.github.io/work">projects</a> I've been working on.</p>
+      <p>Or check out my <a href="http://mtvillwock.github.io/cheatsheet.html">JavaScript Cheatsheet</a>.</p>
+      </div>
+      <div class="col-md-4">
+      <h3>Read about my experience</h3>
+      <p>Check back every week a new post about what I'm learning during Phase 0. From programming concepts to psychological, social, and personal explorations, you'll find it all in my blog.</p>
+      <p><a href="http://mtvillwock.github.io/blog.html">Click to see what I learned in Phase 0.</a></p>
+      </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
+
+
