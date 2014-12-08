@@ -1,66 +1,112 @@
-<!--HTML Skeleton for DBC Blog-->
-<doctype html>
+<!DOCTYPE html>
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+<head>
+  <title>Blog Title | mtvillwock.github.io</title>
+
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
- <title>
-Let's Get Cooking: Tech Issues
- </title>
- </head>
-   <body>
-       <div id="header">
-           <a href="http://mtvillwock.github.io"><h1>MTVillwock.GitHub.io</h1></a>
-           <h2>Let's Get Cooking: Tech Issues</h2>
-           <ul>
-               <li><a href="http://mtvillwock.github.io/about">About</a></li>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="../stylesheets/pages-bootstrap.css">
+  <link rel="stylesheet" href="../stylesheets/blog-post-bootstrap.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul class="pull-left">
+        <li><a href="http://mtvillwock.github.io/about">About</a></li>
         <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
         <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
-               <a href="http://www.twitter.com/mtvillwock"><img id="img1" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/twitter.png" /></a>
-               <a href="https://www.facebook.com/matthew.villwock"><img id="img2" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/facebook.png" /></a>
-               <a href="https://www.linkedin.com/in/matthewvillwock"><img id="img3" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/linkedin.png" /></a>
-               <a href="https://plus.google.com/+MatthewVillwock"><img id="img4" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/googleplus.png" /></a>
-          </ul>
-       </div>
+      </ul>
+      <ul class="pull-right">
+        <a href="http://www.twitter.com/mtvillwock"><img src="../icons/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/matthew.villwock"><img src="../icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/matthewvillwock"><img src="../icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://plus.google.com/+MatthewVillwock"><img src="../icons/googleplus.png" alt="Google+"></a>
+        <a href="https://www.github.com/mtvillwock"><img src="../icons/github.png" alt="Github"></a>
+      </ul>
+    </div>
+  </div>
 
-       <div id="left">
-       <!--Search Bar Code Here
-       <h2>About The Author </h2>
-       <p>Matthew Villwock is a aspiring boot working his way through Phase 0 of Dev Bootcamp. </br>
-        <p>He enjoys reading, writing, learning programming, and reflecting on life. </p>
-       </div>-->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>mtvillwock.github.io</h1>
+      <h2>Never Finished</h2>
+    </div>
+  </div>
 
-        <div id="right">
-         <h2>Winning the Wrong Game</h2>
-         <p id="date">Nov. 2nd, 2014</hp>
-         <!-- Add Date-->
-        <div id="content">
-          <h3>Eating Your Own Dogfood</h3>
-            <p>The technology industry has a problem. Well, lots of problems. But the one I want to talk
+  <div class="article">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/b/b7/Html-source-code.png">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/an2HXY">
+              </div> -->
+            </div>
+            <div class="col-md-8">
+              <h2>Tech Issues</h2>
+              <h4>Nov. 2nd, 2014</h4>
+              <h3>Eating Your Own Dogfood</h3>
+              <p>The technology industry has a problem. Well, lots of problems. But the one I want to talk
               about is the lack of innovation. Don't get me wrong. Every day, somebody is out there building something amazingly cool. Something fun or hip or convenient or beautiful... maybe all of those at once. But does it matter? Will it matter?</p>
-            <p>Computers changed the world, and are still changing it. The Internet is an incredibly powerful thing, having transformed industries from finance to retail and beyond. But despite the massive cultural, economic, and social changes brought about by the Internet, there are still many problems that technology hasn't turned toward.</p>
-            <blockquote>"We wanted flying cars, instead we got 140 characters.”</blockquote>
-            <p>Some problems may not seem like they needed to be solved. I mean, would flying cars really be worth the trouble? People have a hard enough time driving two-dimensionally. But other things, societal issues like gender and racial inequality, funding problems in education, poverty, as well as general problems like curing diseases and figuring out how to travel to and terraform another planet so the human race can continue after we destroy Earth, tend to be left blowing in the wind, while people making and spend massive amounts of capital funding on <a href="http://www.eastbayexpress.com/oakland/the-bacon-wrapped-economy/Content?oid=3494301&storyPage=7">"making widgets or iterating on things that already exist"</a>.</p>
-            <p>I'm not saying there is anything wrong with trying to build a social media platform or with building websites or anything like that. I'm just saying that we could do other things with the technology we have instead of "eating our own dogfood" because it pays well. I realize I'm butchering the original meaning of that phrase, but I think you'll understand what I mean.</p>
-            <p>I guess the question is, what the heck happened?</p>
-          <h3>Yesterday's Future</h3>
-            <p>At one point, it seemed like technology would solve all of the world's problems. Maybe it still will. There are certainly a lot of ways that could go wrong. But why not try?</p>
-            <blockquote><a href="http://www.foundersfund.com/the-future/">"The future that people in the 1960s hoped to see is still the future we’re waiting for today, half a century later.. Instead of Captain Kirk and the USS Enterprise, we got the Priceline Negotiator and a cheap flight to Cabo.</a>"</blockquote></p>
-            <p>From my own limited perspective, it seems that humans are trending inward. We had our shot half a century ago; we went to the moon and staked our claim. Then we just stopped. </p>
-            <p>Now we are hyper-focused on ourselves. What we can learn, buy, or do at instant speed thanks to the Internet. We're working to make <a href="http://www.oculus.com/">virtual reality machines</a> instead of trying to expand our realities.</p>
-            <p>Maybe the internal focus is good. Maybe it's better for humans to look at themselves and try to solve our terrestrial problems instead of trying to travel the cosmos. But we need to look at the problems that remain, instead of tinkering with the ones that already have a solution that works.</p>
-          <h3>Creating the World We Want</h3>
-            <p>There's plenty to be done. The technology industry has big data, massive computing power, VC funding, massive corporations, and brilliant minds. Surely we can do more than make a bigger iPhone or add WiFi to your car.</p>
-            <p>I don't have a lot of ideas for solutions. Capping incomes, with overflow going to benefit health research, education, or public services, seems like a decent idea. Planning company visions with goals that go beyond 5 years and an IPO could help. Building companies with a proper HR process instead of just picking your two best friends could help.</p>
-            <p>Acknowledging that there are important problems (for humanity) that exist and <em>are worth solving</em>, is the first step. Heck, it might be the easiest step. But it's where change needs to start.</p>
+              <p>Computers changed the world, and are still changing it. The Internet is an incredibly powerful thing, having transformed industries from finance to retail and beyond. But despite the massive cultural, economic, and social changes brought about by the Internet, there are still many problems that technology hasn't turned toward.</p>
+              <blockquote>"We wanted flying cars, instead we got 140 characters.”</blockquote>
+              <p>Some problems may not seem like they needed to be solved. I mean, would flying cars really be worth the trouble? People have a hard enough time driving two-dimensionally. But other things, societal issues like gender and racial inequality, funding problems in education, poverty, as well as general problems like curing diseases and figuring out how to travel to and terraform another planet so the human race can continue after we destroy Earth, tend to be left blowing in the wind, while people making and spend massive amounts of capital funding on <a href="http://www.eastbayexpress.com/oakland/the-bacon-wrapped-economy/Content?oid=3494301&storyPage=7">"making widgets or iterating on things that already exist"</a>.</p>
+              <p>I'm not saying there is anything wrong with trying to build a social media platform or with building websites or anything like that. I'm just saying that we could do other things with the technology we have instead of "eating our own dogfood" because it pays well. I realize I'm butchering the original meaning of that phrase, but I think you'll understand what I mean.</p>
+              <p>I guess the question is, what the heck happened?</p>
+              <h3>Yesterday's Future</h3>
+              <p>At one point, it seemed like technology would solve all of the world's problems. Maybe it still will. There are certainly a lot of ways that could go wrong. But why not try?</p>
+              <blockquote><a href="http://www.foundersfund.com/the-future/">"The future that people in the 1960s hoped to see is still the future we’re waiting for today, half a century later.. Instead of Captain Kirk and the USS Enterprise, we got the Priceline Negotiator and a cheap flight to Cabo.</a>"</blockquote></p>
+              <p>From my own limited perspective, it seems that humans are trending inward. We had our shot half a century ago; we went to the moon and staked our claim. Then we just stopped. </p>
+              <p>Now we are hyper-focused on ourselves. What we can learn, buy, or do at instant speed thanks to the Internet. We're working to make <a href="http://www.oculus.com/">virtual reality machines</a> instead of trying to expand our realities.</p>
+              <p>Maybe the internal focus is good. Maybe it's better for humans to look at themselves and try to solve our terrestrial problems instead of trying to travel the cosmos. But we need to look at the problems that remain, instead of tinkering with the ones that already have a solution that works.</p>
+              <h3>Creating the World We Want</h3>
+              <p>There's plenty to be done. The technology industry has big data, massive computing power, VC funding, massive corporations, and brilliant minds. Surely we can do more than make a bigger iPhone or add WiFi to your car.</p>
+              <p>I don't have a lot of ideas for solutions. Capping incomes, with overflow going to benefit health research, education, or public services, seems like a decent idea. Planning company visions with goals that go beyond 5 years and an IPO could help. Building companies with a proper HR process instead of just picking your two best friends could help.</p>
+              <p>Acknowledging that there are important problems (for humanity) that exist and <em>are worth solving</em>, is the first step. Heck, it might be the easiest step. But it's where change needs to start.</p>
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/Av1pac">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/vw43v1">
+              </div> -->
+            </div>
+            <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/0Kd7UO">
+              </div> -->
+            </div>
+          </div>
         </div>
       </div>
 
-       <div id="footer">
-       <a href="http://mtvillwock.github.io/blog">Back to Blog</a>
-       </div>
-
-   </body>
-</html>
+      <div class="learn-more">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About</h3>
+              <p>I'm Matthew Villwock, an aspiring software developer currently attending Dev Bootcamp in San Francisco.</p>
+              <p><a href="http://mtvillwock.github.io/about">Click here to read more about me.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Projects</h3>
+              <p>These are coding projects I've been working on at DBC. Some are simple, some are upcoming.</p>
+              <p><a href="http://mtvillwock.github.io/work">Click here to see my work.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Blog</h3>
+              <p>A record of my weekly experiences at DBC.</p>
+              <p><a href="http://mtvillwock.github.io/blog.html">Click to see what I learned in Phase 0.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
