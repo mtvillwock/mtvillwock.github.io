@@ -1,130 +1,176 @@
-<!--HTML Skeleton for DBC Blog-->
-<doctype html>
+<!DOCTYPE html>
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+<head>
+  <title>JavaScript Constructor Functions | mtvillwock.github.io</title>
+
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
- <title>
-Just Git'ing Started: Enter JavaScript
- </title>
- </head>
-   <body>
-       <div id="header">
-           <a href="http://mtvillwock.github.io"><h1>MTVillwock.GitHub.io</h1></a>
-           <h2>Just Git'ing Started: Enter JavaScript</h2>
-           <ul>
-               <li><a href="http://mtvillwock.github.io/about">About</a></li>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="../stylesheets/pages-bootstrap.css">
+  <link rel="stylesheet" href="../stylesheets/blog-post-bootstrap.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul class="pull-left">
+        <li><a href="http://mtvillwock.github.io/about">About</a></li>
         <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
         <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
-               <a href="http://www.twitter.com/mtvillwock"><img id="img1" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/twitter.png" /></a>
-               <a href="https://www.facebook.com/matthew.villwock"><img id="img2" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/facebook.png" /></a>
-               <a href="https://www.linkedin.com/in/matthewvillwock"><img id="img3" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/linkedin.png" /></a>
-               <a href="https://plus.google.com/+MatthewVillwock"><img id="img4" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/googleplus.png" /></a>
-          </ul>
-       </div>
+      </ul>
+      <ul class="pull-right">
+        <a href="http://www.twitter.com/mtvillwock"><img src="../icons/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/matthew.villwock"><img src="../icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/matthewvillwock"><img src="../icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://plus.google.com/+MatthewVillwock"><img src="../icons/googleplus.png" alt="Google+"></a>
+        <a href="https://www.github.com/mtvillwock"><img src="../icons/github.png" alt="Github"></a>
+      </ul>
+    </div>
+  </div>
 
-       <div id="left">
-       <!--Search Bar Code Here
-       <h2>About The Author </h2>
-       <p>Matthew Villwock is a aspiring boot working his way through Phase 0 of Dev Bootcamp. </br>
-        <p>He enjoys reading, writing, learning programming, and reflecting on life. </p>
-       </div>-->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>mtvillwock.github.io</h1>
+      <h2>Never Finished</h2>
+    </div>
+  </div>
 
-        <div id="right">
-         <h2>JavaScript Constructor Functions vs Ruby Classes</h2>
-         <p id="date">11/23/14</hp>
-         <!-- Add Date-->
-        <div id="content">
-          <h3>And then there was JavaScript</h3>
-          <p>This week DBC pulled a trick on me. Well, on all of us boots. What trick is that?</p>
-          <p>JavaScript.</p>
-          <p>Now, I'm not going to rant about JavaScript too much because I actually don't think it is that bad. I want to keep myself in a growth-mindset (and this week reinforced how important that was for me). The short version is that I had some struggles during my transition from Ruby to JavaScript. But enough about me, let's get to the languages.</p>
-          <p>What are the differences between these two object-oriented languages? There are many. But let's start with one that gave me trouble (until I read <a href="http://www.javascriptkit.com/javatutors/oopjs2.shtml">this</a>): Ruby Classes versus JavaScript constructor functions.</p>
-          <h3>Ruby Classes</h3>
-            <p>You've seen these bad boys before. Classes are used to model real-life objects, like a person or a car or a tool. For example:</p>
-            <p>
+  <div class="article">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/b/b7/Html-source-code.png">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/an2HXY">
+              </div> -->
+            </div>
+            <div class="col-md-8">
+              <h2>JavaScript Constructor Functions vs Ruby Classes</h2>
+              <h4>Nov. 23rd, 2014</h4>
+              <h3>And then there was JavaScript</h3>
+              <p>This week DBC pulled a trick on me. Well, on all of us boots. What trick is that?</p>
+              <p>JavaScript.</p>
+              <p>Now, I'm not going to rant about JavaScript too much because I actually don't think it is that bad. I want to keep myself in a growth-mindset (and this week reinforced how important that was for me). The short version is that I had some struggles during my transition from Ruby to JavaScript. But enough about me, let's get to the languages.</p>
+              <p>What are the differences between these two object-oriented languages? There are many. But let's start with one that gave me trouble (until I read <a href="http://www.javascriptkit.com/javatutors/oopjs2.shtml">this</a>): Ruby Classes versus JavaScript constructor functions.</p>
+              <h3>Ruby Classes</h3>
+              <p>You've seen these bad boys before. Classes are used to model real-life objects, like a person or a car or a tool. For example:</p>
+              <p>
+                <pre><code>
+              class FootballPlayer
+              def initialize(name)
+              @name = name;
+              @has_ball = false;
+              @down = false;
+              @x = 1
+              @y = 5
+              end
+
+              def status
+              # Convoluted method here
+              end
+
+              def move_right
+              if @down == true
+              puts "#{@name} is down. The game is over."
+              else
+              @x += 1
+              puts status
+              end
+              end
+
+              end
+
+              packer = FootballPlayer.new("Micah Hyde")
+              packer.status
+              packer.move_right
+
+                </code></pre>
+              </p>
+              <p>The code above would return this when run:</p>
+              <p>
               <pre><code>
-class FootballPlayer
-  def initialize(name)
-    @name = name;
-    @has_ball = false;
-    @down = false;
-    @x = 1
-    @y = 5
-  end
-
-  def status
-  # Convoluted method here
-  end
-
-  def move_right
-    if @down == true
-    puts "#{@name} is down. The game is over."
-    else
-    @x += 1
-    puts status
-    end
-  end
-
-end
-
-packer = FootballPlayer.new("Micah Hyde")
-packer.status
-packer.move_right
-
+              #=> Micah Hyde is at the 10 yard line.
+              #=> Micah Hyde is at the 20 yard line.
               </code></pre>
-            </p>
-            <p>The code above would return this when run:</p>
-            <p>
-            <pre><code>
-#=> Micah Hyde is at the 10 yard line.
-#=> Micah Hyde is at the 20 yard line.
-            </code></pre>
-            </p>
-            <p>Pretty simple, right? You make a new instance of the class FootballPlayer, which is initialized with a name that you provide, and some important variables like his location (x and y) and whether or not he has the ball or is down. It also gives him two methods: <b>status</b> (which I didn't include here but is a long method that checks where is he and then gives a response based on many different possible conditions) and <b>move_right</b>, which moves the player right and then calls the aforementioned <b>status</b> method. But what does that look like in JavaScript?</p>
-          <h3>JavaScript constructor functions</h3>
-            <p>The thing with JavaScript is that it is not a pretty language. Ruby does everyone a favor by clearly delineating things in a relatively English-like manner. Not so, JavaScript. Here is the same "class" from above written as a JavaScript constructor function:</p>
-            <p>
-              <pre><code>
-function football_player (name) {
-  this.name = name;
-  this.hasBall = false;
-  this.down = false;
+              </p>
+              <p>Pretty simple, right? You make a new instance of the class FootballPlayer, which is initialized with a name that you provide, and some important variables like his location (x and y) and whether or not he has the ball or is down. It also gives him two methods: <b>status</b> (which I didn't include here but is a long method that checks where is he and then gives a response based on many different possible conditions) and <b>move_right</b>, which moves the player right and then calls the aforementioned <b>status</b> method. But what does that look like in JavaScript?</p>
+              <h3>JavaScript constructor functions</h3>
+              <p>The thing with JavaScript is that it is not a pretty language. Ruby does everyone a favor by clearly delineating things in a relatively English-like manner. Not so, JavaScript. Here is the same "class" from above written as a JavaScript constructor function:</p>
+              <p>
+                <pre><code>
+              function football_player (name) {
+              this.name = name;
+              this.hasBall = false;
+              this.down = false;
 
-  this.status = function() {
-  // insufferable amounts of conditional statements here
-}
+              this.status = function() {
+              // insufferable amounts of conditional statements here
+              }
 
-  this.moveRight = function() {
-    if (this.down === true) {
-    console.log(this.name +" is down. The game is over.");
-  }
-    else {
-    this.x +=1; this.status();
-  }
-  }
-}
+              this.moveRight = function() {
+              if (this.down === true) {
+              console.log(this.name +" is down. The game is over.");
+              }
+              else {
+              this.x +=1; this.status();
+              }
+              }
+              }
 
-packer = new football_player("Micah Hyde")
-packer.status();
-packer.moveUp();
+              packer = new football_player("Micah Hyde")
+              packer.status();
+              packer.moveUp();
 
-#=> Micah Hyde is at the 10 yard line.
-#=> Micah Hyde is at the 20 yard line.
-              </code></pre>
-            </p>
-            <p>Like before, this gives us an object (the football player) with the properties <b>name</b>, <b>hasBall</b>, and <b>down</b> as well as the function <b>moveRight</b>. These are respectively equivalent to the instance variables in the <b>def initialize</b> method and the <b>def move_right</b> method in the Ruby class above. As you can see, the outputs are similar.</p>
-            <p>When you get down to it, both snippets of code are doing the same thing. The difference is in the syntax and in some of the rules of what interacts with what. In Ruby you define the scope of your variables by given them a prefix like $, @, or @@. This allows the variables to be used beyond the local scope of whatever code block or method they are being used in. But in JavaScript the scope of your variables (and functions) is based on where they are inside of a function. This is what tripped me up. In Ruby you can initialize an instance variable and use it throughout all the other methods in a class. In JavaScript the scope of your variable depends on where you put it inside of a large function.</p>
-            <p>I suppose in hindsight, JavaScript makes sense with its variables, insofar as having their locality based on how deep or shallowly they are located inside of a large function or method (a method in JavaScript meaning a function, such as moveRight above, inside of a larger function that represents what would be a class in Ruby). I like the way the scope of Ruby's variables are distinguished by special symbols and not by where they are written. But JavaScript is an essential tool for working with web browsers, and as such I will not let a little thing like syntax keep me from adding it to my toolbox.</p>
-            <p>I hope this post made sense and taught you a bit about one difference between Ruby and JavaScript. Thanks for reading!</p>
+              #=> Micah Hyde is at the 10 yard line.
+              #=> Micah Hyde is at the 20 yard line.
+                </code></pre>
+              </p>
+              <p>Like before, this gives us an object (the football player) with the properties <b>name</b>, <b>hasBall</b>, and <b>down</b> as well as the function <b>moveRight</b>. These are respectively equivalent to the instance variables in the <b>def initialize</b> method and the <b>def move_right</b> method in the Ruby class above. As you can see, the outputs are similar.</p>
+              <p>When you get down to it, both snippets of code are doing the same thing. The difference is in the syntax and in some of the rules of what interacts with what. In Ruby you define the scope of your variables by given them a prefix like $, @, or @@. This allows the variables to be used beyond the local scope of whatever code block or method they are being used in. But in JavaScript the scope of your variables (and functions) is based on where they are inside of a function. This is what tripped me up. In Ruby you can initialize an instance variable and use it throughout all the other methods in a class. In JavaScript the scope of your variable depends on where you put it inside of a large function.</p>
+              <p>I suppose in hindsight, JavaScript makes sense with its variables, insofar as having their locality based on how deep or shallowly they are located inside of a large function or method (a method in JavaScript meaning a function, such as moveRight above, inside of a larger function that represents what would be a class in Ruby). I like the way the scope of Ruby's variables are distinguished by special symbols and not by where they are written. But JavaScript is an essential tool for working with web browsers, and as such I will not let a little thing like syntax keep me from adding it to my toolbox.</p>
+              <p>I hope this post made sense and taught you a bit about one difference between Ruby and JavaScript. Thanks for reading!</p>
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/Av1pac">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/vw43v1">
+              </div> -->
+            </div>
+            <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/0Kd7UO">
+              </div> -->
+            </div>
+          </div>
         </div>
       </div>
 
-       <div id="footer">
-       <a href="http://mtvillwock.github.io/blog">Back to Blog</a>
-       </div>
-
-   </body>
-</html>
+      <div class="learn-more">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About</h3>
+              <p>I'm Matthew Villwock, an aspiring software developer currently attending Dev Bootcamp in San Francisco.</p>
+              <p><a href="http://mtvillwock.github.io/about">Click here to read more about me.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Projects</h3>
+              <p>These are coding projects I've been working on at DBC. Some are simple, some are upcoming.</p>
+              <p><a href="http://mtvillwock.github.io/work">Click here to see my work.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Blog</h3>
+              <p>A record of my weekly experiences at DBC.</p>
+              <p><a href="http://mtvillwock.github.io/blog.html">Click to see what I learned in Phase 0.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
