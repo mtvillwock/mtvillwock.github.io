@@ -1,94 +1,139 @@
-<!--HTML Skeleton for DBC Blog-->
-<doctype html>
+<!DOCTYPE html>
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+<head>
+  <title>Mapping Out Enumerable Methods | mtvillwock.github.io</title>
+
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
- <title>
-Just Git'ing Started: Enumerable Methods
- </title>
- </head>
-   <body>
-       <div id="header">
-           <a href="http://mtvillwock.github.io"><h1>MTVillwock.GitHub.io</h1></a>
-           <h2>Just Git'ing Started: Enumerable Methods</h2>
-           <ul>
-               <li><a href="http://mtvillwock.github.io/about">About</a></li>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="../stylesheets/pages-bootstrap.css">
+  <link rel="stylesheet" href="../stylesheets/blog-post-bootstrap.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul class="pull-left">
+        <li><a href="http://mtvillwock.github.io/about">About</a></li>
         <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
         <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
-               <a href="http://www.twitter.com/mtvillwock"><img id="img1" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/twitter.png" /></a>
-               <a href="https://www.facebook.com/matthew.villwock"><img id="img2" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/facebook.png" /></a>
-               <a href="https://www.linkedin.com/in/matthewvillwock"><img id="img3" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/linkedin.png" /></a>
-               <a href="https://plus.google.com/+MatthewVillwock"><img id="img4" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/googleplus.png" /></a>
-          </ul>
-       </div>
+      </ul>
+      <ul class="pull-right">
+        <a href="http://www.twitter.com/mtvillwock"><img src="../icons/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/matthew.villwock"><img src="../icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/matthewvillwock"><img src="../icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://plus.google.com/+MatthewVillwock"><img src="../icons/googleplus.png" alt="Google+"></a>
+        <a href="https://www.github.com/mtvillwock"><img src="../icons/github.png" alt="Github"></a>
+      </ul>
+    </div>
+  </div>
 
-       <div id="left">
-       <!--Search Bar Code Here
-       <h2>About The Author </h2>
-       <p>Matthew Villwock is a aspiring boot working his way through Phase 0 of Dev Bootcamp. </br>
-        <p>He enjoys reading, writing, learning programming, and reflecting on life. </p>
-       </div>-->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>mtvillwock.github.io</h1>
+      <h2>Never Finished</h2>
+    </div>
+  </div>
 
-        <div id="right">
-         <h2>Mapping Out Enumerable Methods</h2>
-         <p id="date">Date</hp>
-         <!-- Add Date-->
-        <div id="content">
-
-          <h3>Enumer-What?</h3>
-            <p>Enumerable. Enum. Enumerator. These words come up a lot in the Ruby documentation. But what the heck do they mean, and why should you care?</p>
-            <p>Here's my pitch.</p>
-            <h3>Keep It <s>Simple</s> Concise</h3>
-            <p><a href="http://ruby-doc.org/core-2.0/Enumerable.html" target="blank">Enumerable</a> is a Module in Ruby that is used in many different Classes, including arrays, hashes, and ranges.
-            <blockquote>"The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection." ~ Ruby Documentation, Enumerable</blockquote>
+  <div class="article">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/b/b7/Html-source-code.png">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/an2HXY">
+              </div> -->
+            </div>
+            <div class="col-md-8">
+              <h2>Mapping Out Enumerable Methods</h2>
+              <h4>Nov. 2nd, 2014</h4>
+              <h3>Enumer-What?</h3>
+              <p>Enumerable. Enum. Enumerator. These words come up a lot in the Ruby documentation. But what the heck do they mean, and why should you care?</p>
+              <p>Here's my pitch.</p>
+              <h3>Keep It <s>Simple</s> Concise</h3>
+              <p><a href="http://ruby-doc.org/core-2.0/Enumerable.html" target="blank">Enumerable</a> is a Module in Ruby that is used in many different Classes, including arrays, hashes, and ranges.
+              <blockquote>"The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection." ~ Ruby Documentation, Enumerable</blockquote>
               Essentially it grants a Class (whether it is one you made, or a pre-built one), the ability to use <i>variations</i> of the <a href="http://ruby-doc.org/core-2.0/Array.html#method-i-each">#each</a> method, such as <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-find" target="blank">#find</a>, <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-group_by" target="blank">#group_by</a>, and <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-map" target="blank">#map</a>.</p>
-            <p>What's the catch?</p>
-            <p>The Class that includes the Enumerable module must "define an <i>each</i> instance method". (The Well-Grounded Rubyist, pg. 287). </p>
-            <p>What would that look like?
+              <p>What's the catch?</p>
+              <p>The Class that includes the Enumerable module must "define an <i>each</i> instance method". (The Well-Grounded Rubyist, pg. 287). </p>
+              <p>What would that look like?
               <pre><code>
-                class NewClass
-                  include Enumerable
-                  def each
-                    # "Behavior that yields items to a supplied code block one at a time" (pg. 287)
-                  end
-                end
+              class NewClass
+              include Enumerable
+              def each
+                # "Behavior that yields items to a supplied code block one at a time" (pg. 287)
+              end
+              end
               </code></pre>
               Not a bad price to pay in order to access a bunch of useful data manipulation methods, right?
-            </p>
-          <h3>Mapping It Out</h3>
-            <p>Okay, so what's an example of one of these much-hyped Enumerable methods?</p>
-            <p>How about <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-map" target="blank">#map</a>?</p>
-            <p>The #map method has a few cool features. First, whatever information you feed to it will be returned as a new array. So if you had a range of numbers 1 through 10 and you wanted to square each of them, you'd do this: </p>
+              </p>
+              <h3>Mapping It Out</h3>
+              <p>Okay, so what's an example of one of these much-hyped Enumerable methods?</p>
+              <p>How about <a href="http://ruby-doc.org/core-2.0/Enumerable.html#method-i-map" target="blank">#map</a>?</p>
+              <p>The #map method has a few cool features. First, whatever information you feed to it will be returned as a new array. So if you had a range of numbers 1 through 10 and you wanted to square each of them, you'd do this: </p>
               <pre><code>
-                range_mapped_to_array = (1..10).map { |x| x * x }
-                #=> [1, 4, 9, 25, 36, 49, 64, 81, 100]
-            </code></pre></p>
-            <p>But what if you wanted to permanently make a change to your data?</p>
-            <p>That's where #map! comes in. What's the difference?</p>
-            <p>Pretty simple: #map is non-destructive and #map! is destructive. #map creates a copy of your data as an array, and then applies whatever transformations you feed to the code block (in the example above, <pre><code>|x|</code></pre> represents each element in the array, and <pre><code>x * x</code></pre> are the instructions for how to modify the array). #map! makes transformations to an existing array, permanently modifying it.
-            <p>Here's an example:</p>
-            <p>
-            <pre><code>
+              range_mapped_to_array = (1..10).map { |x| x * x }
+              #=> [1, 4, 9, 25, 36, 49, 64, 81, 100]
+              </code></pre></p>
+              <p>But what if you wanted to permanently make a change to your data?</p>
+              <p>That's where #map! comes in. What's the difference?</p>
+              <p>Pretty simple: #map is non-destructive and #map! is destructive. #map creates a copy of your data as an array, and then applies whatever transformations you feed to the code block (in the example above, <pre><code>|x|</code></pre> represents each element in the array, and <pre><code>x * x</code></pre> are the instructions for how to modify the array). #map! makes transformations to an existing array, permanently modifying it.
+              <p>Here's an example:</p>
+              <p>
+              <pre><code>
               squared_array_destructively_mapped_to_floats = range_mapped_to_array.map! { |x| x.to_f }
               puts squared_array_destructively_mapped_to_floats
               #=>[1.0, 4.0, 9.0, 16.0, 25.0, 36.0, 49.0, 64.0, 81.0, 100.0]
-            </code></pre>
-            </p>
-            <p>Tada! Now you have an array of squared numbers that are floated (they have a decimal instead of being an integer). And they'll stay that way. I didn't have to assign a new variable name to the floated version of the array, because the original array that I created from mapping the range was destructively modified, but I did to illustrate what was happening.</p>
+              </code></pre>
+              </p>
+              <p>Tada! Now you have an array of squared numbers that are floated (they have a decimal instead of being an integer). And they'll stay that way. I didn't have to assign a new variable name to the floated version of the array, because the original array that I created from mapping the range was destructively modified, but I did to illustrate what was happening.</p>
 
-            <p>However, thanks to my superfluous but descriptive variable, I now have two arrays with different names and the same transformed contents. Oops! Just something to remember. Be careful with 'destructive' methods, they have that descriptive adjective for a reason!</p>
-            <p>Note: Technically, #map! is an Array method, but using #map returns an array, so you can use #map to store something in an array and then permanently alter that array by using the #map! method.</p>
-            <p>I hope this explanation of the Enumerable module and the Enumberable#map method made sense.</p>
-            <p>Thanks for reading, and please leave feedback for me on <a href="https://github.com/mtvillwock" target="blank">GitHub</a> in my profile under issues, or drop me a line on <a href="http://www.twitter.com/mtvillwock" target="blank">Twitter</a>.</p>
+              <p>However, thanks to my superfluous but descriptive variable, I now have two arrays with different names and the same transformed contents. Oops! Just something to remember. Be careful with 'destructive' methods, they have that descriptive adjective for a reason!</p>
+              <p>Note: Technically, #map! is an Array method, but using #map returns an array, so you can use #map to store something in an array and then permanently alter that array by using the #map! method.</p>
+              <p>I hope this explanation of the Enumerable module and the Enumberable#map method made sense.</p>
+              <p>Thanks for reading, and please leave feedback for me on <a href="https://github.com/mtvillwock" target="blank">GitHub</a> in my profile under issues, or drop me a line on <a href="http://www.twitter.com/mtvillwock" target="blank">Twitter</a>.</p>
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/Av1pac">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/vw43v1">
+              </div> -->
+            </div>
+            <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/0Kd7UO">
+              </div> -->
+            </div>
+          </div>
         </div>
       </div>
 
-       <div id="footer">
-       <a href="http://mtvillwock.github.io/blog">Back to Blog</a>
-       </div>
-
-   </body>
-</html>
+      <div class="learn-more">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About</h3>
+              <p>I'm Matthew Villwock, an aspiring software developer currently attending Dev Bootcamp in San Francisco.</p>
+              <p><a href="http://mtvillwock.github.io/about">Click here to read more about me.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Projects</h3>
+              <p>These are coding projects I've been working on at DBC. Some are simple, some are upcoming.</p>
+              <p><a href="http://mtvillwock.github.io/work">Click here to see my work.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Blog</h3>
+              <p>A record of my weekly experiences at DBC.</p>
+              <p><a href="http://mtvillwock.github.io/blog.html">Click to see what I learned in Phase 0.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
