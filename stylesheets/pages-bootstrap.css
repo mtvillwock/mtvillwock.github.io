@@ -1,0 +1,54 @@
+/*need to add font-family: 'Roboto', sans-serif; to appropriate spots*/
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 16px;
+  font-weight: ;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('http://sustainabletravel.org/cms/wp-content/uploads/2012/07/stock-photo-18276245-cliffs-of-moher1.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 150px;
+  text-transform: uppercase;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-stretch: thick;
+}
+
+.jumbotron h2 {
+  font-size: 32px;
+  color: #fff;
+  font-stretch: thin;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
