@@ -1,70 +1,122 @@
-<!--HTML Skeleton for DBC Blog-->
-<doctype html>
+<!DOCTYPE html>
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
- <title>
-DBC Culture: Let's Get Cooking
- </title>
- </head>
-   <body>
-       <div id="header">
-        <a href="http://mtvillwock.github.io"><h1>MTVillwock.GitHub.io</h1></a>
-        <h2>DBC Culture</h2>
-           <ul>
-               <li><a href="http://mtvillwock.github.io/about">About</a></li>
+
+<head>
+  <title>DBC Culture | mtvillwock.github.io</title>
+
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="../stylesheets/pages-bootstrap.css">
+  <link rel="stylesheet" href="../stylesheets/blog-post-bootstrap.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul class="pull-left">
+        <li><a href="http://mtvillwock.github.io/about">About</a></li>
         <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
         <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
-               <a href="http://www.twitter.com/mtvillwock"><img id="img1" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/twitter.png" /></a>
-               <a href="https://www.facebook.com/matthew.villwock"><img id="img2" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/facebook.png" /></a>
-               <a href="https://www.linkedin.com/in/matthewvillwock"><img id="img3" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/linkedin.png" /></a>
-               <a href="https://plus.google.com/+MatthewVillwock"><img id="img4" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/googleplus.png" /></a>
-          </ul>
-       </div>
-       <div id="left">
-       <!--Search Bar Code Here
-       <h2>About The Author </h2>
-       <p>Matthew Villwock is a aspiring boot working his way through Phase 0 of Dev Bootcamp. </br>
-        <p>He enjoys reading, writing, learning programming, and reflecting on life. </p>
-       </div>-->
-       <div id="right">
-           <h2>Fireside Chat: The DBC Mindset</h2>
-           <p id="date">Oct. 12th, 2014</p>
-           <!-- Add Date-->
-           <div id="content">
-           <p>Earlier this week I had the opportunity to watch Shereef's <a href="http://vimeo.com/85001014">Fireside Chat</a> and I'm here to reflect on that video. It had a lot of important points about the experience and culture of Dev BootCamp, which I want to discuss here.</p>
-           <p>One thing that struck me about Shereef's discussion was how earnest and open he was about everything. He didn't paint a cheery picture of some easy transactional experience where you show up for 9-weeks, put in your time, and walk out assured of a well-paying developer job.
-           </br>
-            He acknowledged that there are times that will be frustrating, humbling, and painful. He pointed out the difference between putting in time after the teachers have gone home for the night and burning yourself out by trying to solve problems after your brain has shut down for the day.</p>
-           <p>Another important part of Shereef's talk was addressing a lot of common concerns like the state of the junior developer job market, frequent fears that incoming students have, such as imposter syndrome, and noting that students who struggled to keep up with their cohort could repeat a phase with the next cohort in line.</p>
-           <p>My main takeaway of the video goes back to Shereef's opening analogy of the Dev BootCamp environment being like a kitchen in which the students (and instructors) are all like chefs who collaborate to make great meals. This differs from traditional education institutions which are like a restaurant, where the education is dictated to students in a competitive environment.</p>
-           <p>I felt empowered hearing Shereef's explanation. Quotes like <em>"By day five I want you to apologize for how much you've taken control of your education"</em> and <em>"If you hear yourself saying 'this isn't what I ordered' then get in there and fix it – that's the true hacker attitude"</em> inspire me. It feels great to know that the DBC environment supports and encourages experimentation, failure, and vulnerability, because those are not things that normal education, nor much of society, accept or promote.</p>
-           <p>The last time I remember hearing a teacher speak with this kind of enthusiasm and encouragement for explorationg was my AP US History teacher. Like DBC, that class was known to be challenging in ways that other classes were not. I loved AP US History, and from what I have seen so far and experienced during this first week of Phase 0, I think I'm going to love DBC too.</p>
-           <p>DBC looks to be a great challenge, in the best way possible. It will challenge us mentally, emotionally, socially, culturally, and even physically (I see you, yoga). But it is also an incubator. We will enter DBC, having come from a myrid of backgrounds with a diverse array of experiences, but with the same goal: to become better people. We just happen to be learning web development at the same time.</p>
-           <p>I think DBC has exactly the type of culture I am looking for. Somewhere that isn't worried about what is tried and true and "how things should be done" but rather wants to challenge what things are possible. I see DBC as having a culture of openness, raw honesty, vulnerability, and education. We are here to learn and grow together, and I can't wait to get started.</p>
-           <p>Listening to Shereef strengthened my expectations about DBC. I feel like DBC is up-front about what they expect from the students – to give 100% every day – and that the DBC team is going to do the same.</p>
-           <p>Additionally, the Engineering Empathy curriculum is a major part of why I applied to DBC instead of other programming bootcamps. I think everyone is here to grow and learn. Maybe some are ahead of others, or some view the environment differently. But we are here together, and I can't wait to see how far we can go.</p>
-           <p>I'm thrilled to be attending DBC. I've spend the majority of my life being told what to do in order to get a grade. Now I have the chance to learn by doing, by stumbling and skinning my metaphorical knee, by building something that matters to me. I'm also excited to be in an environment that is collaborative instead of competitive. I love working with a team to solve problems.</p>
-           <p>Of course, DBC also makes me nervous.Why wouldn't it?</br>
-           I'm traveling:
-            <ul>
+      </ul>
+      <ul class="pull-right">
+        <a href="http://www.twitter.com/mtvillwock"><img src="../icons/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/matthew.villwock"><img src="../icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/matthewvillwock"><img src="../icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://plus.google.com/+MatthewVillwock"><img src="../icons/googleplus.png" alt="Google+"></a>
+        <a href="https://www.github.com/mtvillwock"><img src="../icons/github.png" alt="Github"></a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>mtvillwock.github.io</h1>
+      <h2>Never Finished</h2>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/b/b7/Html-source-code.png">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/an2HXY">
+              </div> -->
+            </div>
+            <div class="col-md-8">
+              <h2>Fireside Chat and the DBC Mindset</h2>
+              <h4>Oct. 12th, 2014</h4>
+              <p>Earlier this week I had the opportunity to watch Shereef's <a href="http://vimeo.com/85001014">Fireside Chat</a> and I'm here to reflect on that video. It had a lot of important points about the experience and culture of Dev BootCamp, which I want to discuss here.</p>
+              <p>One thing that struck me about Shereef's discussion was how earnest and open he was about everything. He didn't paint a cheery picture of some easy transactional experience where you show up for 9-weeks, put in your time, and walk out assured of a well-paying developer job.
+              </br>
+              He acknowledged that there are times that will be frustrating, humbling, and painful. He pointed out the difference between putting in time after the teachers have gone home for the night and burning yourself out by trying to solve problems after your brain has shut down for the day.</p>
+              <p>Another important part of Shereef's talk was addressing a lot of common concerns like the state of the junior developer job market, frequent fears that incoming students have, such as imposter syndrome, and noting that students who struggled to keep up with their cohort could repeat a phase with the next cohort in line.</p>
+              <p>My main takeaway of the video goes back to Shereef's opening analogy of the Dev BootCamp environment being like a kitchen in which the students (and instructors) are all like chefs who collaborate to make great meals. This differs from traditional education institutions which are like a restaurant, where the education is dictated to students in a competitive environment.</p>
+              <p>I felt empowered hearing Shereef's explanation. Quotes like <em>"By day five I want you to apologize for how much you've taken control of your education"</em> and <em>"If you hear yourself saying 'this isn't what I ordered' then get in there and fix it – that's the true hacker attitude"</em> inspire me. It feels great to know that the DBC environment supports and encourages experimentation, failure, and vulnerability, because those are not things that normal education, nor much of society, accept or promote.</p>
+              <p>The last time I remember hearing a teacher speak with this kind of enthusiasm and encouragement for explorationg was my AP US History teacher. Like DBC, that class was known to be challenging in ways that other classes were not. I loved AP US History, and from what I have seen so far and experienced during this first week of Phase 0, I think I'm going to love DBC too.</p>
+              <p>DBC looks to be a great challenge, in the best way possible. It will challenge us mentally, emotionally, socially, culturally, and even physically (I see you, yoga). But it is also an incubator. We will enter DBC, having come from a myrid of backgrounds with a diverse array of experiences, but with the same goal: to become better people. We just happen to be learning web development at the same time.</p>
+              <p>I think DBC has exactly the type of culture I am looking for. Somewhere that isn't worried about what is tried and true and "how things should be done" but rather wants to challenge what things are possible. I see DBC as having a culture of openness, raw honesty, vulnerability, and education. We are here to learn and grow together, and I can't wait to get started.</p>
+              <p>Listening to Shereef strengthened my expectations about DBC. I feel like DBC is up-front about what they expect from the students – to give 100% every day – and that the DBC team is going to do the same.</p>
+              <p>Additionally, the Engineering Empathy curriculum is a major part of why I applied to DBC instead of other programming bootcamps. I think everyone is here to grow and learn. Maybe some are ahead of others, or some view the environment differently. But we are here together, and I can't wait to see how far we can go.</p>
+              <p>I'm thrilled to be attending DBC. I've spend the majority of my life being told what to do in order to get a grade. Now I have the chance to learn by doing, by stumbling and skinning my metaphorical knee, by building something that matters to me. I'm also excited to be in an environment that is collaborative instead of competitive. I love working with a team to solve problems.</p>
+              <p>Of course, DBC also makes me nervous.Why wouldn't it?</br>
+              I'm traveling:
+              <ul>
               <li>halfway across the country</li>
               <li>to a city that I don't know</li>
               <li>for 9 weeks</li>
                <li>with people I've only recently met</li>
               <li>to learn a skill that I have little experience with</li>
-            </ul>
-           </p>
-           <p>In the words of <a href="https://www.youtube.com/watch?v=fmdV3ypR3tA">James T. Kirk</a>, "Sounds like fun."</p>
-           <p>So yes, I'm nervous. But being nervous is a good thing. It means that I'm not doing something familiar. I'm not doing something easy. I'm not doing something that I'm used to doing.</p>
-           <p>DBC will challenge me.
-           </br>DBC will change me.</p>
-           <p>Who wouldn't want to be a part of that?</p>
-           </div>
-           <!-- Comment Form Here-->
-       </div>
-       <div id="footer">
-       <a href="http://mtvillwock.github.io/blog">Back to Blog</a>
-       </div>
-   </body>
-</html>
+              </ul>
+              </p>
+              <p>In the words of <a href="https://www.youtube.com/watch?v=fmdV3ypR3tA">James T. Kirk</a>, "Sounds like fun."</p>
+              <p>So yes, I'm nervous. But being nervous is a good thing. It means that I'm not doing something familiar. I'm not doing something easy. I'm not doing something that I'm used to doing.</p>
+              <p>DBC will challenge me.
+              </br>DBC will change me.</p>
+              <p>Who wouldn't want to be a part of that?</p>
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/Av1pac">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/vw43v1">
+              </div> -->
+            </div>
+            <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/0Kd7UO">
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="learn-more">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About</h3>
+              <p>I'm Matthew Villwock, an aspiring software developer currently attending Dev Bootcamp in San Francisco.</p>
+              <p><a href="http://mtvillwock.github.io/about">Click here to read more about me.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Projects</h3>
+              <p>These are coding projects I've been working on at DBC. Some are simple, some are upcoming.</p>
+              <p><a href="http://mtvillwock.github.io/work">Click here to see my work.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Blog</h3>
+              <p>A record of my weekly experiences at DBC.</p>
+              <p><a href="http://mtvillwock.github.io/blog.html">Click to see what I learned in Phase 0.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
