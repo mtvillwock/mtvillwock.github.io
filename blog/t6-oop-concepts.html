@@ -1,99 +1,146 @@
-<!--HTML Skeleton for DBC Blog-->
-<doctype html>
+<!DOCTYPE html>
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+<head>
+  <title>Variable Scope in Ruby | mtvillwock.github.io</title>
+
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/monokai_sublime.min.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
- <title>
-Just Git'ing Started: Variable Scope in Ruby
- </title>
- </head>
-   <body>
-       <div id="header">
-           <a href="http://mtvillwock.github.io"><h1>MTVillwock.GitHub.io</h1></a>
-           <h2>Just Git'ing Started: Variable Scope in Ruby</h2>
-           <ul>
-               <li><a href="http://mtvillwock.github.io/about">About</a></li>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="../stylesheets/pages-bootstrap.css">
+  <link rel="stylesheet" href="../stylesheets/blog-post-bootstrap.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul class="pull-left">
+        <li><a href="http://mtvillwock.github.io/about">About</a></li>
         <li><a href="http://mtvillwock.github.io/blog.html">Blog</a></li>
         <li><a href="http://mtvillwock.github.io/work">Projects</a></li>
-               <a href="http://www.twitter.com/mtvillwock"><img id="img1" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/twitter.png" /></a>
-               <a href="https://www.facebook.com/matthew.villwock"><img id="img2" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/facebook.png" /></a>
-               <a href="https://www.linkedin.com/in/matthewvillwock"><img id="img3" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/linkedin.png" /></a>
-               <a href="https://plus.google.com/+MatthewVillwock"><img id="img4" src="https://raw.githubusercontent.com/mtvillwock/mtvillwock.github.io/master/imgs/googleplus.png" /></a>
-          </ul>
-       </div>
+      </ul>
+      <ul class="pull-right">
+        <a href="http://www.twitter.com/mtvillwock"><img src="../icons/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/matthew.villwock"><img src="../icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/matthewvillwock"><img src="../icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://plus.google.com/+MatthewVillwock"><img src="../icons/googleplus.png" alt="Google+"></a>
+        <a href="https://www.github.com/mtvillwock"><img src="../icons/github.png" alt="Github"></a>
+      </ul>
+    </div>
+  </div>
 
-       <div id="left">
-       <!--Search Bar Code Here
-       <h2>About The Author </h2>
-       <p>Matthew Villwock is a aspiring boot working his way through Phase 0 of Dev Bootcamp. </br>
-        <p>He enjoys reading, writing, learning programming, and reflecting on life. </p>
-       </div>-->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>mtvillwock.github.io</h1>
+      <h2>Never Finished</h2>
+    </div>
+  </div>
 
-        <div id="right">
-         <h2>Scoping Out Ruby Variables</h2>
-         <p id="date">Nov. 16th, 2014</hp>
-         <!-- Add Date-->
-        <div id="content">
-            <p>Ruby supports five different kinds of variables with four levels of scope. Before we discuss the variables, let's cover scope to give some context.</p>
-            <p>The scope of a variable defines where the variable can be accessed from within a program. To use a (most likely imperfect) metaphor, you can think of different types of variables as having different security clearances. Ruby, much like in the government or some businesses, tends to work best using a need-to-know style of information access. This is both for security reasons and to reduce possible bugs or other unintended interactions.</p>
-            <p>So what are these different types of variables?</p>
-          <h3>Local Variables</h3>
-            <p>Ah, the humble local variable. Like its name suggests, local variables have a limited range. They only share their information within whatever method or loop that created them. Think of local variables as private conversations (no wiretaps here!). Information is shared where it needs to be, and only the people it pertains to have access to it.</p>
-            <p><pre><code>secret_conversation = “The passcode is 1234.”</code></pre></p>
-            <p>Local variables are useful for loops that are specific to a certain method, or when you want to make sure that the information contained in them is not accessible anywhere else. They must start with a lowercase letter or an underscore.</p>
-            <h3>Class Variables</h3>
-            <p>Class variables are accessible by any instance of a class. This can get dangerous, because if you change the variable value for one class, you'll change it for all instances of that class. However, if there is a class that you want to be able to adjust all instances of at once, class variables are one way to go.</p>
-            <p><pre><code>@@classwide_conversation = “All officers must report to the barracks at 1600 hours.”
-# Wait, that’s not right. Better overwrite it.
-@@classwide_conversation = “All officers must report to the barracks at 0700 hours.”</code></pre></p>
-            <p>Class variables are denoted with the @@ notation and must be initialized (have a value set) at creation.</p>
-          <h3>Instance Variables</h3>
-            <p>The little brother to class variables, instance variables can be accessed by one instance (see where that name comes from?) of a class. More precise than their class variable brethren, instance variables are great for when you have information within an instance of a class that you want to access at multiple points throughout that class.</p>
-            <p><pre><code id="ruby">
-class Spy
-  def initialize(location)
-    @my_location = location
-  end
-  def call_for_extraction(hot_spot)
-    @my_location = "14th and Richmond"
-    puts "I need an extraction team ASAP at #{@my_location} now!"
-  end
-  def mission_complete(new_location)
-    @my_location = "just outside target coordinates"
-    puts "The job is done. I'm #{@my_location}, heading to the rendezvous."
-  end
-end
-</code></pre></p>
-            <p>Instance variables are also useful for when you want instances of a class to have an attribute that they can modify without it affecting other instances of the same class. Instance variables are notated with an @ symbol.</p>
-          <h3>Global Variables</h3>
-            <p>Global variables are variables that can be seen anywhere and changed from anywhere in the program. Using global variables is often frowned upon due to the combination of unnecessary security risk and debugging issues that they can create.</p>
-            <p><pre><code>$nuclear_access_code = 1234567</code></pre></p>
-            <p>As you can see from my hyperbolistic example, making certain variables global can have dire consequences. However, <a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#What_is_Variable_Scope.3F">"a number of pre-defined global variables are available to obtain information about the Ruby environment."</a> Global variables are written with a $ notation.</p>
-          <h3>Constant Variables</h3>
-            <p>Constant variables, despite what their name suggests, are not actually constant. They should be, but Ruby will allow you to change them after they are declared, but not without giving you a warning about doing so. The scope of a constant depends on where it is created. If the constant is made inside of a class, then it functions similarly to a class variable. If the constant is created outside of a class or module, it will have global scope.</p>
-            <p><pre><code>
-GLOBAL_INFO = { "secrets" => "Everyone know you can save money with Geico."}
-class InsuranceCompany
-  CLASS_INFO = { "calculation" => "A times B times C equals X. If X is less than the cost of a recall, we don't do one."
-  def initialize
-  @insurance_rate = insurance_rate
-  end
-end
-</code></pre></p>
-            <p>Constants are written using a capital letter as the first letter (and sometimes in ALL_CAPS). </p>
-          <h3>Closing the Scope</h3>
-            <p>Based on my limited personal experience, I would say that instance variables are far and away my favorite variables to work with because they are accessible throughout an entire class. Local variables are helpful when iterating through loops, and if you need a once-of value in a pinch.</p>
+  <div class="article">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/b/b7/Html-source-code.png">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/an2HXY">
+              </div> -->
+            </div>
+            <div class="col-md-8">
+              <h2>Scoping Out Ruby Variables</h2>
+              <h4>Nov. 16th, 2014</h4>
+              <h3>Levels of Scope</h3>
+              <p>Ruby supports five different kinds of variables with four levels of scope. Before we discuss the variables, let's cover scope to give some context.</p>
+              <p>The scope of a variable defines where the variable can be accessed from within a program. To use a (most likely imperfect) metaphor, you can think of different types of variables as having different security clearances. Ruby, much like in the government or some businesses, tends to work best using a need-to-know style of information access. This is both for security reasons and to reduce possible bugs or other unintended interactions.</p>
+              <p>So what are these different types of variables?</p>
+              <h3>Local Variables</h3>
+              <p>Ah, the humble local variable. Like its name suggests, local variables have a limited range. They only share their information within whatever method or loop that created them. Think of local variables as private conversations (no wiretaps here!). Information is shared where it needs to be, and only the people it pertains to have access to it.</p>
+              <p><pre><code>secret_conversation = “The passcode is 1234.”</code></pre></p>
+              <p>Local variables are useful for loops that are specific to a certain method, or when you want to make sure that the information contained in them is not accessible anywhere else. They must start with a lowercase letter or an underscore.</p>
+              <h3>Class Variables</h3>
+              <p>Class variables are accessible by any instance of a class. This can get dangerous, because if you change the variable value for one class, you'll change it for all instances of that class. However, if there is a class that you want to be able to adjust all instances of at once, class variables are one way to go.</p>
+              <p><pre><code>@@classwide_conversation = “All officers must report to the barracks at 1600 hours.”
+              # Wait, that’s not right. Better overwrite it.
+              @@classwide_conversation = “All officers must report to the barracks at 0700 hours.”</code></pre></p>
+              <p>Class variables are denoted with the @@ notation and must be initialized (have a value set) at creation.</p>
+              <h3>Instance Variables</h3>
+              <p>The little brother to class variables, instance variables can be accessed by one instance (see where that name comes from?) of a class. More precise than their class variable brethren, instance variables are great for when you have information within an instance of a class that you want to access at multiple points throughout that class.</p>
+              <p><pre><code id="ruby">
+              class Spy
+              def initialize(location)
+              @my_location = location
+              end
+              def call_for_extraction(hot_spot)
+              @my_location = "14th and Richmond"
+              puts "I need an extraction team ASAP at #{@my_location} now!"
+              end
+              def mission_complete(new_location)
+              @my_location = "just outside target coordinates"
+              puts "The job is done. I'm #{@my_location}, heading to the rendezvous."
+              end
+              end
+              </code></pre></p>
+              <p>Instance variables are also useful for when you want instances of a class to have an attribute that they can modify without it affecting other instances of the same class. Instance variables are notated with an @ symbol.</p>
+              <h3>Global Variables</h3>
+              <p>Global variables are variables that can be seen anywhere and changed from anywhere in the program. Using global variables is often frowned upon due to the combination of unnecessary security risk and debugging issues that they can create.</p>
+              <p><pre><code>$nuclear_access_code = 1234567</code></pre></p>
+              <p>As you can see from my hyperbolistic example, making certain variables global can have dire consequences. However, <a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#What_is_Variable_Scope.3F">"a number of pre-defined global variables are available to obtain information about the Ruby environment."</a> Global variables are written with a $ notation.</p>
+              <h3>Constant Variables</h3>
+              <p>Constant variables, despite what their name suggests, are not actually constant. They should be, but Ruby will allow you to change them after they are declared, but not without giving you a warning about doing so. The scope of a constant depends on where it is created. If the constant is made inside of a class, then it functions similarly to a class variable. If the constant is created outside of a class or module, it will have global scope.</p>
+              <p><pre><code>
+              GLOBAL_INFO = { "secrets" => "Everyone know you can save money with Geico."}
+              class InsuranceCompany
+              CLASS_INFO = { "calculation" => "A times B times C equals X. If X is less than the cost of a recall, we don't do one."
+              def initialize
+              @insurance_rate = insurance_rate
+              end
+              end
+              </code></pre></p>
+              <p>Constants are written using a capital letter as the first letter (and sometimes in ALL_CAPS). </p>
+              <h3>Closing the Scope</h3>
+              <p>Based on my limited personal experience, I would say that instance variables are far and away my favorite variables to work with because they are accessible throughout an entire class. Local variables are helpful when iterating through loops, and if you need a once-of value in a pinch.</p>
               <p>Class variables are cool, but can mess things up in a hurry, like if you changed the @@wheels variable on your class Automobile to 18 because you were making an instance of that class called semi_truck. Now all of your other instances of class Automobile would have 18 wheels. Global variables bring even more volatility to the table. Constants I could see using on occasion, but for now, I like to keep my information in the areas that I know it needs to be and nowhere else.</p>
-            <p>Hopefully this post left you feeling well-acquainted with Ruby's variables. Thanks for reading!</p>
+              <p>Hopefully this post left you feeling well-acquainted with Ruby's variables. Thanks for reading!</p>
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/Av1pac">
+            </div>
+            <div class="thumbnail">
+                <img src="http://goo.gl/vw43v1">
+              </div> -->
+            </div>
+            <div class="col-md-2">
+            <!-- <div class="thumbnail">
+                <img src="http://goo.gl/0Kd7UO">
+              </div> -->
+            </div>
+          </div>
         </div>
       </div>
 
-       <div id="footer">
-       <a href="http://mtvillwock.github.io/blog">Back to Blog</a>
-       </div>
-
-   </body>
-</html>
+      <div class="learn-more">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About</h3>
+              <p>I'm Matthew Villwock, an aspiring software developer currently attending Dev Bootcamp in San Francisco.</p>
+              <p><a href="http://mtvillwock.github.io/about">Click here to read more about me.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Projects</h3>
+              <p>These are coding projects I've been working on at DBC. Some are simple, some are upcoming.</p>
+              <p><a href="http://mtvillwock.github.io/work">Click here to see my work.</a></p>
+            </div>
+            <div class="col-md-4">
+              <h3>Blog</h3>
+              <p>A record of my weekly experiences at DBC.</p>
+              <p><a href="http://mtvillwock.github.io/blog.html">Click to see what I learned in Phase 0.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
